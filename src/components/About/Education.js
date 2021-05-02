@@ -6,7 +6,7 @@ const Education = ({ed}) => {
         <div>
             <div className="border my-4 p-4">
                 <div className="mb-5">
-                    <h3 className="text-danger">{title}</h3>
+                    <h3 className="text-info">{title}</h3>
                     <h4>{institute}</h4>
                     <h5>{degree}</h5>
                     <h6>({year})</h6>

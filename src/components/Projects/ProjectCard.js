@@ -2,12 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { fadeIn } from 'react-animations';
+import Radium, { StyleRoot } from 'radium';
+
+
+
+const styles = {
+    fadeIn: {
+        animation: 'x 1s',
+        animationName: Radium.keyframes(fadeIn, 'fadeIn')
+    }
+}
+
+
+
 
 const ProjectCard = ({ project }) => {
     const { name, description, features, technology, live, client, server, img1, img2, img3 } = project;
     return (
         <div className="mb-5">
-            <div style={{border: '1px solid gray'}} className="row p-4">
+            <StyleRoot>
+            <div style={{ border: '1px solid gray'},styles.fadeIn} className="row p-4">
                 <div className="col-6">
                     <Carousel className="w-100">
                         <div>
@@ -22,7 +37,7 @@ const ProjectCard = ({ project }) => {
                     </Carousel>
                 </div>
                 <div className="col-6 p-3">
-                    <h1 className="fw-bold text-main"> {name} </h1>
+                    <h1 className="fw-bold text-main">{name}</h1>
                     <p> {description} </p>
                     <h4 className="text-main">Features: </h4>
                     <ul>
@@ -43,6 +58,7 @@ const ProjectCard = ({ project }) => {
                     </div>
                 </div>
             </div>
+            </StyleRoot>
         </div>
     );
 };

@@ -6,7 +6,7 @@ const Skills = ({ skill }) => {
         <div>
             <div className="border my-4 p-4">
                 <div className="mb-5">
-                    <h3 className="mb-4 text-danger">{title}</h3>
+                    <h3 className="mb-4 text-info">{title}</h3>
                     <div className="row">
                         {
                             Skills.map((skill, index) => {
