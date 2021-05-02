@@ -3,7 +3,6 @@ import Navbar from '../Home/Navbar/Navbar';
 import { ProjectDetails } from '../../Info/Info'
 import ProjectCard from './ProjectCard';
 import Footer from '../Footer/Footer'
-import { Carousel } from 'react-responsive-carousel';
 
 const Projects = () => {
     return (

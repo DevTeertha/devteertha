@@ -44,7 +44,7 @@ const Header = () => {
                                 </h4>
                                 <p>I'm a JavaScript Developer.</p>
                                 <div>
-                                    <Link class="btn btn-primary me-3" to="/contact"> <Arrow90degRight /> Hire Me</Link>
+                                    <Link class="btn btn-danger me-3" to="/contact"> <Arrow90degRight /> Hire Me</Link>
                                     <a class="btn common-background text-white" target="_blank" href="https://drive.google.com/file/d/1mVxbsUsCWGqJW0Nh5fj1sPqmJJWkuqGg/view?usp=sharing"><FileEarmarkPersonFill /> Resume</a>
                                 </div>
                             </div>
