@@ -20,7 +20,7 @@ export const ProjectDetails = [
         live: "https://redlight-wedding.web.app/",
         client: "https://github.com/DevTeertha/redlight-wedding-client",
         server: "https://github.com/DevTeertha/redlight-wedding-server",
-        technology: ['React JS', 'Bootstrap', 'Metarial UI', 'Node JS', 'Express JS', 'MongoDB', 'Firebase'],
+        technology: ['React JS', 'Bootstrap', 'Metarial UI', 'Node JS', 'Express JS' , 'Stripe JS' , 'MongoDB', 'Firebase'],
         img1: 'https://i.postimg.cc/zG2Lh9Qy/1-0.png',
         img2: 'https://i.postimg.cc/5NxjR4dH/8.png',
         img3: 'https://i.postimg.cc/rmxzvzw4/2.png'
@@ -40,6 +40,22 @@ export const ProjectDetails = [
         img1: 'https://i.postimg.cc/XqDfvp9v/1.png',
         img2: 'https://i.postimg.cc/05tdnHhq/2.png',
         img3: 'https://i.postimg.cc/VLd9VWc0/3.png'
+    },
+    {
+        name: "City Rider",
+        description: "This is a simple rider booking website using map api.",
+        features: {
+            a: "Login Authentication (Private Route)",
+            b: "Map API",
+            c: ""
+        },
+        live: "https://city-rider-dbf0f.web.app/",
+        client: "https://github.com/DevTeertha/bazar-deal-client",
+        server: "",
+        technology: ['React JS', 'Bootstrap'],
+        img1: 'https://i.postimg.cc/2Sw-jcdYW/1.png',
+        img2: 'https://i.postimg.cc/8CzpqFk0/2.png',
+        img3: 'https://i.postimg.cc/nLSFZHCc/3.png'
     }
 ]
 export const AboutEducation = [
