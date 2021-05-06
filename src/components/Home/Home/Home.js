@@ -6,7 +6,7 @@ import Footer from '../../Footer/Footer';
 const Home = () => {
     return (
         <div style={{ height: '100%', overflow: 'hidden' }} className="common-background">
-            <div className="py-4">
+            <div className="pt-3">
                 <Navbar></Navbar>
             </div>
             <Header></Header>
