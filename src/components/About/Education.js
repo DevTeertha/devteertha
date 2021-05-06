@@ -5,7 +5,7 @@ const Education = ({ed}) => {
     return (
         <div className="card-background">
             <div className="border my-4 p-4">
-                <div className="mb-5">
+                <div className="mb-5 text-center">
                     <h3 className="text-info">{title}</h3>
                     <h4>{institute}</h4>
                     <h5>{degree}</h5>

@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
                     <div className="col-md-6 p-3">
                         <h1 className="fw-bold text-main">{name}</h1>
                         <p> {description} </p>
-                        <h4 className="text-main">Features: </h4>
+                        <h4 className="text-main fw-bold">Features: </h4>
                         <ul>
                             {
                                 features.a && <li> {features.a} </li>
@@ -51,10 +51,10 @@ const ProjectCard = ({ project }) => {
                             }
                         </ul>
                         <div>
-                            <h4 className="text-main">Technology: </h4>
+                            <h4 className="text-main fw-bold">Technology: </h4>
                             <ul>
                                 {technology.map((t,index) => (
-                                    <h5 className="d-inline-block mt-4">
+                                    <h5 style={{fontSize: '1em'}} className="d-inline-block mt-4">
                                         <span style={{borderRadius: '0.3em'}} className="text-center bg-secondary py-1 px-2 me-2 text-white" key={index}>{t}</span>
                                     </h5>
                                 ))}
