@@ -30,7 +30,7 @@ const styles = {
 
 const About = () => {
     return (
-        <div>
+        <div className="other-background">
             <Navbar></Navbar>
             <div className="container">
                 <div className="about-header py-5">
@@ -64,7 +64,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="row py-3">
-                        <div className="col-md-12 col-lg-6">
+                        <div className="col-lg-12">
                             <div className="my-skills-container">
                                 <div className="skills-header my-4">
                                     <h1 className="text-center fw-bold">My <span className="text-main">Skills</span></h1>
@@ -78,17 +78,17 @@ const About = () => {
                                 </StyleRoot>
                             </div>
                         </div>
-                        <div className="col-md-12 col-lg-6 education">
+                        <div className="col-lg-12 education">
                             <div className="my-skills-container">
                                 <div className="skills-header my-4">
                                     <h1 className="text-center fw-bold ">My <span className="text-main">Education</span></h1>
                                 </div>
                                 <StyleRoot>
-                                    <div className="skills-content" style={styles.zoomIn}>
-                                        {
-                                            AboutEducation.map((ed, index) => <Education key={index} ed={ed}></Education>)
-                                        }
-                                    </div>
+                                        <div className="skills-content" style={styles.zoomIn}>
+                                            {
+                                                AboutEducation.map((ed, index) => <Education key={index} ed={ed}></Education>)
+                                            }
+                                        </div>
                                 </StyleRoot>
                             </div>
                         </div>

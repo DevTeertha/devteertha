@@ -3,7 +3,7 @@ import React from 'react';
 const Education = ({ed}) => {
     const { title , institute , degree , year } = ed;
     return (
-        <div>
+        <div className="card-background">
             <div className="border my-4 p-4">
                 <div className="mb-5">
                     <h3 className="text-info">{title}</h3>

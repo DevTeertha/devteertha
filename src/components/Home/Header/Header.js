@@ -22,7 +22,7 @@ const styles = {
 
 const Header = () => {
     return (
-        <div>
+        <div className="other-background">
             <div className="container header-container">
                 <div className="row align-items-center">
                     <div className="col-sm-12 col-md-7">
@@ -54,7 +54,7 @@ const Header = () => {
                     <div className="col-sm-12 col-md-5">
                         <StyleRoot>
                             <div className="profileImage ps-5 py-5" style={styles.fadeInRight}>
-                                <img className="w-100 text-middle" src={myProfile} alt="DevTeertha" />
+                                <img className="profileImg w-100 text-middle" src={myProfile} alt="DevTeertha" />
                             </div>
                         </StyleRoot>
                     </div>

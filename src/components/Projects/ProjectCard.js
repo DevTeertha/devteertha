@@ -19,11 +19,11 @@ const styles = {
 const ProjectCard = ({ project }) => {
     const { name, description, features, technology, live, client, server, img1, img2, img3 } = project;
     return (
-        <div className="mb-5">
+        <div className="mb-5 card-background">
             <StyleRoot>
-                <div style={styles.fadeIn} className="row p-4 project-container">
+                <div style={styles.fadeIn} className="row p-4">
                     <div className="col-md-6">
-                        <Carousel className="w-100">
+                        <Carousel>
                             <div>
                                 <img src={img1} />
                             </div>
@@ -53,18 +53,22 @@ const ProjectCard = ({ project }) => {
                         <div>
                             <h4 className="text-main">Technology: </h4>
                             <ul>
-                                {technology.map(t => <li>{t}</li>)}
+                                {technology.map((t,index) => (
+                                    <h5 className="d-inline-block mt-4">
+                                        <span style={{borderRadius: '0.3em'}} className="text-center bg-secondary py-1 px-2 me-2 text-white" key={index}>{t}</span>
+                                    </h5>
+                                ))}
                             </ul>
                         </div>
                         <div>
                             {
-                                live && <a className="btn btn-outline-secondary ms-3" target="_blank" href={live}>Live</a>
+                                live && <a className="btn btn-outline-info ms-3" target="_blank" href={live}>Live</a>
                             }
                             {
-                                client && <a className="btn btn-outline-secondary ms-3" target="_blank" href={client}>Client</a>
+                                client && <a className="btn btn-outline-info ms-3" target="_blank" href={client}>Client</a>
                             }
                             {
-                                server && <a className="btn btn-outline-secondary ms-3" target="_blank" href={server}>Server</a>
+                                server && <a className="btn btn-outline-info ms-3" target="_blank" href={server}>Server</a>
                             }
                         </div>
                     </div>

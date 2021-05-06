@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer'
 
 const Projects = () => {
     return (
-        <div>
+        <div className="other-background">
             <Navbar></Navbar>
             <div className="container py-5">
                 <div className="project-header">
