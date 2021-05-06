@@ -3,9 +3,9 @@ import React from 'react';
 const Skills = ({ skill }) => {
     const { title, Skills } = skill;
     return (
-        <div className="card-background">
+        <div style={{borderLeft: `0.5em solid rgb(30, 182, 228)`}} className="card-background">
             <div className="border my-4 p-4">
-                <div className="mb-5 text-center">
+                <div className="mb-5">
                     <h3 className="mb-4 text-info">{title}</h3>
                         {
                             Skills.map((skill, index) => {

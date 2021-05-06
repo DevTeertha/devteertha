@@ -3,7 +3,7 @@ export const ProfileDetails = {
     shortName: "Dev Teertha",
     phone: "01672066834",
     email: "devteertha28@gmail.com",
-    description: "I'm a JavaScript Developer.",
+    description: "I'm a MERN Stack Developer.",
     about: "I'm Front End Developer. But i know backend also.I like to learn new technology. I'm currently studying in department of Computer Science, Ranada Prasad Shaha University.",
     address: "165/2 BB Road Golachipa , Narayanganj",
     state: "Dhaka,Bangladesh"

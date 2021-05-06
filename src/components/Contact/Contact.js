@@ -22,9 +22,9 @@ const Contact = () => {
             });
     }
     return (
-        <div>
+        <div style={{height:'100%'}} className="common-background">
             <Navbar></Navbar>
-            <div style={{ marginBottom: '10em',marginTop: '2em' }} className="container py-5">
+            <div style={{marginTop: '2em' }} className="container py-5">
                 <h1 className="text-center fw-bold">Contact <span className="text-main">With Me</span></h1>
                 <form className="border p-4 w-50 mx-auto mt-5" onSubmit={sendEmail}>
                     <div class="form-group">

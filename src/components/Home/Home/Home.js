@@ -5,10 +5,11 @@ import Footer from '../../Footer/Footer';
 
 const Home = () => {
     return (
-        <div>
-            <Navbar></Navbar>
+        <div style={{ height: '100%', overflow: 'hidden' }} className="common-background">
+            <div className="py-4">
+                <Navbar></Navbar>
+            </div>
             <Header></Header>
-            <Footer></Footer>
         </div>
     );
 };

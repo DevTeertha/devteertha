@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FileEarmarkPersonFill, Arrow90degRight } from 'react-bootstrap-icons';
 import Typewriter from 'typewriter-effect';
 import myProfile from '../../../img/myProfile.jpg';
+import {ProfileDetails} from './../../../Info/Info'
 import { fadeInRight , fadeInLeft } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 
@@ -21,19 +22,20 @@ const styles = {
 
 
 const Header = () => {
+    const {name,description} = ProfileDetails;
     return (
-        <div className="other-background">
+        <div style={{height: '100%'}} className="d-flex align-items-center">
             <div className="container header-container">
                 <div className="row align-items-center">
                     <div className="col-sm-12 col-md-7">
                         <div className="header-content-container">
                             <StyleRoot>
-                            <div className="header-content" style={styles.fadeInLeft}>
+                            <div className="header-content text-white" style={styles.fadeInLeft}>
                                 <h1>
                                     Hello, <br />
-                                    It's Me <span className="text-main">Tertha Dev Sarker</span>
+                                    It's Me <span className="text-danger fw-bold"> {name} </span>
                                 </h1>
-                                <h4>
+                                <h4 className="text-white">
                                     <Typewriter
                                         options={{
                                             strings: ['Web Developer', 'Programmer', 'Software Engineer'],
@@ -42,10 +44,10 @@ const Header = () => {
                                         }}
                                     />
                                 </h4>
-                                <p>I'm a JavaScript Developer.</p>
+                                <p>{description}</p>
                                 <div>
                                     <Link class="btn btn-danger me-3" to="/contact"> <Arrow90degRight /> Hire Me</Link>
-                                    <a class="btn common-background text-white" target="_blank" href="https://drive.google.com/file/d/1mVxbsUsCWGqJW0Nh5fj1sPqmJJWkuqGg/view?usp=sharing"><FileEarmarkPersonFill /> Resume</a>
+                                    <a class="btn btn-success" target="_blank" href="https://drive.google.com/file/d/1mVxbsUsCWGqJW0Nh5fj1sPqmJJWkuqGg/view?usp=sharing"><FileEarmarkPersonFill /> Resume</a>
                                 </div>
                             </div>
                             </StyleRoot>

@@ -7,14 +7,16 @@ import Footer from '../Footer/Footer'
 const Projects = () => {
     return (
         <div className="other-background">
-            <Navbar></Navbar>
+            <div className="common-background">
+                <Navbar></Navbar>
+            </div>
             <div className="container py-5">
                 <div className="project-header">
                     <h1 className="text-center fw-bold">My <span className="text-main">Projects</span></h1>
                 </div>
                 <div className="mt-5">
                     {
-                        ProjectDetails.map((project , index)=><ProjectCard project={project} key={index}></ProjectCard>)
+                        ProjectDetails.map((project, index) => <ProjectCard project={project} key={index}></ProjectCard>)
                     }
                 </div>
             </div>
