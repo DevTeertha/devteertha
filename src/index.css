@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 #root{
+  font-family: 'Reggae One', cursive;
   height: 100%;
 }
 code {
