@@ -80,12 +80,16 @@ export const AboutEducation = [
 ]
 export const AboutSkills = [
     {
-        title: "Front End",
-        Skills: ['JavaScript', 'React JS', 'Bootstrap', 'Metarial UI']
+        title: "Expert",
+        Skills: ['JavaScript(ES6)', 'React JS', 'Bootstrap', 'Metarial UI']
     },
     {
-        title: "Back End",
+        title: "Comfortable",
         Skills: ['Node JS', 'Express JS', 'MongoDB']
+    },
+    {
+        title: "Familiar",
+        Skills: ['TypeScript','Redux','Socket IO']
     },
     {
         title: "Others",

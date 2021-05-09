@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <div className="common-background text-white py-5">
             <div className="container text-center">
-                <p>Copyright &copy; {new Date().getFullYear()} | {shortName} </p>
                 <p> <PhoneFill></PhoneFill>  +88 {phone} || <EnvelopeFill></EnvelopeFill>  {email} </p>
                 <p> {address} <br/> {state} </p>
+                <p>Copyright &copy; {new Date().getFullYear()} | {shortName} </p>
             </div>
         </div>
     );
