@@ -12,8 +12,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 #root{
-  font-family: 'Reggae One', cursive;
+  font-family: 'Sarabun', sans-serif;
   height: 100%;
+  font-size: 18px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Snow from 'react-snow-effect';
+import Blog from './components/Blog/Blog';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
         <Route path="/about">
           <Snow></Snow>
           <About></About>
+        </Route>
+        <Route path="/blog">
+          <Snow></Snow>
+          <Blog></Blog>
         </Route>
         <Route path="/projects">
           <Snow></Snow>

@@ -3,10 +3,11 @@ export const ProfileDetails = {
     shortName: "Dev Teertha",
     phone: "01672066834",
     email: "devteertha28@gmail.com",
-    description: "I'm a MERN Stack Developer.",
-    about: "I'm Front End Developer. But i know backend also.I like to learn new technology. I'm currently studying in department of Computer Science, Ranada Prasad Shaha University.",
-    address: "165/2 BB Road Golachipa , Narayanganj",
-    state: "Dhaka,Bangladesh"
+    description: "I'm a Web Developer.",
+    about: "I'm Front End Developer. But I able to work with Back End also. I like to learn new technology and it's very interesting thing for me. I'm studying in Computer Science & Engineering at Ranada Prasad Shaha University.",
+    address: "165/2 BB Road Golachipa, Narayanganj",
+    state: "Dhaka, Bangladesh",
+    CV: "https://drive.google.com/file/d/1U8sRiGqP4N_KXz9FjcWu6dBRqMzdHoM9/view?usp=sharing"
 }
 export const ProjectDetails = [
     {
@@ -89,7 +90,7 @@ export const AboutSkills = [
     },
     {
         title: "Familiar",
-        Skills: ['TypeScript','Redux','Socket IO']
+        Skills: ['TypeScript','Redux','Socket IO', 'Python']
     },
     {
         title: "Others",

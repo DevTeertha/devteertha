@@ -22,7 +22,7 @@ const styles = {
 
 
 const Header = () => {
-    const {name,description} = ProfileDetails;
+    const { name, description, CV } = ProfileDetails;
     return (
         <div style={{height: '100%'}} className="d-flex align-items-center">
             <div className="container header-container">
@@ -47,7 +47,7 @@ const Header = () => {
                                 <p>{description}</p>
                                 <div>
                                     <Link class="btn btn-danger me-3" to="/contact"> <Arrow90degRight /> Hire Me</Link>
-                                    <a class="btn btn-success" target="_blank" href="https://drive.google.com/file/d/1mVxbsUsCWGqJW0Nh5fj1sPqmJJWkuqGg/view?usp=sharing"><FileEarmarkPersonFill /> Resume</a>
+                                    <a class="btn btn-success" target="_blank" href={CV}><FileEarmarkPersonFill /> Resume</a>
                                 </div>
                             </div>
                             </StyleRoot>
