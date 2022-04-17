@@ -1,0 +1,17 @@
+@mixin laptop {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@include laptop() {
+  .navigation_container {
+    .nav_menu {
+      ul {
+        display: none;
+      }
+      .nav_menu_icon {
+        display: block !important;
+      }
+    }
+  }
+}

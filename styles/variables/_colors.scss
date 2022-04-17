@@ -1,0 +1,21 @@
+$primaryColor: #6f34fe;
+$primaryLightBgColor: linear-gradient(
+  33deg,
+  rgba(242, 242, 255, 1) 0%,
+  rgba(235, 249, 255, 1) 100%
+);
+$primaryDarkColor: #07003b;
+$secondaryColor: #fca61f;
+.text_primaryColor {
+  color: $primaryColor;
+}
+.text_underline_primaryColor {
+  text-decoration: underline;
+  color: $primaryColor;
+}
+.text_primaryDarkColor {
+  color: $primaryDarkColor;
+}
+.bg_primaryLightBgColor {
+  background: $primaryLightBgColor;
+}

@@ -1,0 +1,48 @@
+@mixin common_button(
+  $bgColor,
+  $textColor,
+  $hoverBgColor,
+  $hoverTextColor,
+  $fontSize,
+  $borderRadius
+) {
+  display: inline-block;
+  background-color: $bgColor;
+  color: $textColor;
+  border-radius: $borderRadius;
+  font-size: $fontSize;
+  transition: 500ms all ease-out;
+  transition-property: transform;
+  padding: 0.5em 1.8em;
+  box-shadow: 0 0 85px 0 #e9eefc;
+  &:hover {
+    background-color: $hoverBgColor;
+    color: $hoverTextColor;
+    transform: translateY(-5px);
+  }
+}
+@mixin common_underline_button($color, $hoverTextColor, $fontSize) {
+  display: inline-block;
+  color: $color;
+  border-bottom: 2px solid $color;
+  padding-bottom: 6px;
+  line-height: 20px;
+  font-size: $fontSize;
+  transition: 500ms all ease-out;
+  transition-property: transform;
+  &:hover {
+  }
+}
+.common_btn {
+  @include common_button(
+    $secondaryColor,
+    white,
+    $primaryColor,
+    white,
+    1em,
+    100px
+  );
+}
+.common_underline_btn {
+  @include common_underline_button($primaryColor, $secondaryColor, 1.5em);
+}
