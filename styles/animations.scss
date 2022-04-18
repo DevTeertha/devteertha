@@ -1,18 +1,41 @@
-@keyframes MoveXY {
-  0% {
-    transform: translateX(0);
+@mixin animation_moveY($value) {
+  @keyframes MoveY {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY($value);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  50% {
-    transform: translateX(-15px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.animation_moveXY {
-  transform: translateX(0);
   transition: 4s all ease-out;
-  animation-name: MoveXY;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  animation-name: MoveY;
+}
+@mixin animation_moveX($value) {
+  @keyframes MoveX {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX($value);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  transition: 4s all ease-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: MoveX;
+}
+
+.animation_moveX {
+  @include animation_moveX(-15px);
+}
+.animation_moveY {
+  @include animation_moveY(-15px);
 }

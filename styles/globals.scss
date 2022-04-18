@@ -10,7 +10,7 @@
 @import "./variables/mixin";
 @import "./animations.scss";
 @import "./responsive.scss";
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
 
 html,
 body {
@@ -56,15 +56,107 @@ a {
   }
 }
 .header_container {
-  .header_title {
-    color: #3f396d;
-    font-size: 3.25em;
+  margin-top: 2em;
+  .container {
+    position: relative;
+    .header_title {
+      color: #3f396d;
+      font-size: 3.25em;
+      font-weight: 600;
+    }
+    .header_name {
+      font-size: 4em;
+      height: 93px;
+      font-weight: 700;
+    }
+    .hireme_btn {
+      padding: 0.9em 3.4em;
+      font-size: 1.25em;
+    }
+    .header_description {
+      font-family: "Lato", sans-serif;
+      color: #7d7789;
+      font-size: 1.37em;
+      margin-bottom: 1.5em;
+    }
+    .header_image_container {
+      position: relative;
+      &::after {
+        content: "";
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        z-index: 99;
+        background: url("../assets/curn-icon.png") no-repeat top left;
+        @include animation_moveY(-15px);
+      }
+      .header_img_card1 {
+        &::after {
+          content: "";
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          top: 10%;
+          right: 0;
+          background: url("../assets/half-circle.png") no-repeat top left;
+          @include animation_moveY(-15px);
+        }
+        &::before {
+          content: "";
+          width: 36px;
+          height: 36px;
+          position: absolute;
+          bottom: 10%;
+          right: -100px;
+          background: url("../assets/triangle-icon.png") no-repeat top left;
+          @include animation_moveY(-15px);
+        }
+      }
+    }
   }
-  .header_name {
-    font-size: 5em;
-    font-weight: 700;
-  }
-  .hireme_btn {
-    font-size: 1.5em;
+}
+.social_icons_container {
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  transform: translateY(-50%);
+  .fa-brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.25em;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &.fa-facebook-f {
+      color: #255afc;
+      &:hover {
+        background-color: #255afc;
+        color: white;
+      }
+    }
+    &.fa-linkedin-in {
+      color: #1d74b1;
+      &:hover {
+        background-color: #1d74b1;
+        color: white;
+      }
+    }
+    &.fa-github {
+      color: #f33a7e;
+      &:hover {
+        background-color: #f33a7e;
+        color: white;
+      }
+    }
   }
 }
