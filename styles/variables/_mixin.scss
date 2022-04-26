@@ -48,6 +48,32 @@
     width: 100%;
   }
 }
+@mixin animationShape($width, $height, $top, $bottom, $left, $right, $url) {
+  content: "";
+  width: $width;
+  height: $height;
+  position: absolute;
+  @if ($top) {
+    top: $top;
+  }
+  @if ($left) {
+    left: $left;
+  }
+  @if ($bottom) {
+    bottom: $bottom;
+  }
+  @if ($right) {
+    right: $right;
+  }
+  z-index: 99;
+  background: url($url) no-repeat top left;
+  @include animation_moveY(-15px);
+}
+@mixin transition($time, $property) {
+  transition-duration: $time;
+  transition-property: $property;
+  transition-timing-function: ease-out;
+}
 .common_btn {
   @include common_button(
     $secondaryColor,

@@ -12,6 +12,7 @@
   "dependencies": {
     "next": "12.1.4",
     "react": "18.0.0",
+    "react-circular-progressbar": "^2.0.4",
     "react-dom": "18.0.0",
     "react-typewriting": "^2.2.0",
     "sass": "^1.50.0"

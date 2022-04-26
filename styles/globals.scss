@@ -29,7 +29,18 @@ a {
 * {
   box-sizing: border-box;
 }
-
+.category_text {
+  font-weight: 600;
+  font-size: 1.375em;
+  line-height: 24px;
+  color: $primaryColor;
+}
+.heading_text {
+  font-weight: 700;
+  font-size: 3.25em;
+  color: $primaryColor2;
+  line-height: 53px;
+}
 .navigation_container {
   .my_logo {
     color: $primaryDarkColor;
@@ -94,26 +105,64 @@ a {
       }
       .header_img_card1 {
         &::after {
-          content: "";
-          width: 60px;
-          height: 60px;
-          position: absolute;
-          top: 10%;
-          right: 0;
-          background: url("../assets/half-circle.png") no-repeat top left;
-          @include animation_moveY(-15px);
+          @include animationShape(
+            60px,
+            60px,
+            10%,
+            "",
+            "",
+            0,
+            "../../assets/half-circle.png"
+          );
         }
         &::before {
-          content: "";
-          width: 36px;
-          height: 36px;
-          position: absolute;
-          bottom: 10%;
-          right: -100px;
-          background: url("../assets/triangle-icon.png") no-repeat top left;
-          @include animation_moveY(-15px);
+          @include animationShape(
+            36px,
+            36px,
+            "",
+            10%,
+            "",
+            0,
+            "../../assets/triangle-icon.png"
+          );
         }
       }
+    }
+  }
+}
+.service_container {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 150px;
+    top: 15%;
+    left: 0;
+    background: url("../assets/circle-bg-left-img.png") no-repeat top left;
+  }
+  &::before {
+    @include animationShape(
+      60px,
+      60px,
+      10%,
+      "",
+      100px,
+      "",
+      "../../assets/half-circle.png"
+    );
+  }
+  .heading_text {
+    &::before {
+      @include animationShape(
+        36px,
+        36px,
+        50%,
+        "",
+        "",
+        250px,
+        "../../assets/curn-icon.png"
+      );
     }
   }
 }
@@ -159,4 +208,80 @@ a {
       }
     }
   }
+}
+.mouseFollowContainer {
+  position: relative;
+  .app_cursor1 {
+    z-index: 999999999999999;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0) translate(-50%, -50%);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+  }
+  .app_cursor2 {
+    z-index: 999999999999;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0) translate(-50%, -50%);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+  }
+}
+.service_card {
+  background: #fff;
+  border: 1px solid transparent;
+  padding: 2.5em 2.25em;
+  border-radius: 20px;
+  box-shadow: 0 0 85px 0 #e9eefc;
+  @include transition(500ms, transform);
+
+  &:hover {
+    border: 1px solid $primaryColor;
+    transform: rotate(-1deg);
+    .service_icon {
+      img {
+        transform: translateY(-10px);
+      }
+    }
+  }
+  h2 {
+    color: $primaryColor2;
+    font-weight: 700;
+    font-size: 1.625em;
+  }
+  p {
+    font-size: 1.125em;
+    line-height: 1.75em;
+    color: $grayColor;
+    font-family: "Lato", sans-serif;
+  }
+  .service_icon {
+    width: 228px;
+    height: 130px;
+    display: flex;
+    background: #f4f9ff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    img {
+      @include transition(500ms, transform);
+    }
+  }
+}
+.skill_card {
+  background-color: white;
+  padding: 2.06em 1.75em 2.18em;
+  box-shadow: 0 0 5.31em 0 #e9eefc;
+  border-radius: 1.25em;
 }

@@ -1,0 +1,56 @@
+{
+  "category": "My Skills",
+  "heading": "Beautiful & Unique Digital Experiences",
+  "description": "Nostrum exercitationem ullam corporis suscipit laborioa nisi ut aliquid exrea commodi consequatur magni dolores aos qui ratione voluptatem nesciunt. Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano consequntar magni dolores.",
+  "url": "",
+  "skills": [
+    {
+      "name": "HTML/CSS",
+      "percentage": 90
+    },
+    {
+      "name": "SASS",
+      "percentage": 90
+    },
+    {
+      "name": "Bootstrap",
+      "percentage": 90
+    },
+    {
+      "name": "Tailwind CSS",
+      "percentage": 90
+    },
+    {
+      "name": "JavaScript",
+      "percentage": 90
+    },
+    {
+      "name": "React JS | Next JS",
+      "percentage": 90
+    },
+    {
+      "name": "Node JS",
+      "percentage": 90
+    },
+    {
+      "name": "Express JS",
+      "percentage": 90
+    },
+    {
+      "name": "REST APIs",
+      "percentage": 90
+    },
+    {
+      "name": "MongoDB",
+      "percentage": 90
+    },
+    {
+      "name": "MySQL",
+      "percentage": 90
+    },
+    {
+      "name": "Figma",
+      "percentage": 90
+    }
+  ]
+}

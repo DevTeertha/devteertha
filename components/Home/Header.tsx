@@ -2,25 +2,18 @@ import Image from "next/image";
 import React from "react";
 import { Typewriting } from "react-typewriting";
 import profileImage from "../../assets/banner-right-img.png";
+import basicInfo from "../../FakeDB/basicInfo.json";
 import { TypewritingRenderArgs } from "../interfaces/interfaces";
-import Navbar from "../Navbar/Navbar";
 const Header = () => {
   return (
-    <section className="bg_primaryLightBgColor">
-      <Navbar />
+    <>
       <section className="header_container pt-6">
         <div className="container mx-auto">
           <div className="grid items-center sm:grid-cols-1 lg:grid-cols-2">
             <div className="pt-3">
               <div>
-                <h2 className="header_title">Hello, I Am</h2>
-                <Typewriting
-                  strings={[
-                    "Tertha Dev Sarker",
-                    "Front End Developer",
-                    "Software Engineer",
-                  ]}
-                >
+                <h2 className="header_title">{basicInfo?.intro}</h2>
+                <Typewriting strings={basicInfo?.title}>
                   {({
                     currentText,
                     fullCurrentText,
@@ -33,10 +26,7 @@ const Header = () => {
                     </h1>
                   )}
                 </Typewriting>
-                <p className="header_description">
-                  I'm a professional Front End Developer. I like to learn new
-                  technology. I'm fast learner.
-                </p>
+                <p className="header_description">{basicInfo?.description}</p>
                 <div className="flex items-center">
                   <div>
                     <button className="hireme_btn common_btn">Hire Me</button>
@@ -63,22 +53,20 @@ const Header = () => {
           </div>
           <div className="social_icons_container">
             <ul>
-              <li className="my-5">
-                <a href="#">
-                  <i className="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li className="my-5">
-                <a href="#" className="fa-brands fa-linkedin-in"></a>
-              </li>
-              <li className="my-5">
-                <a href="#" className="fa-brands fa-github"></a>
-              </li>
+              {basicInfo?.socialMedias.map((social, key) => {
+                return (
+                  <li key={key} className="my-5">
+                    <a target="_blank" href={social.url}>
+                      <i className={social.icon}></i>
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
       </section>
-    </section>
+    </>
   );
 };
 
