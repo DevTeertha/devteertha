@@ -10,6 +10,12 @@ $secondaryColor: #fca61f;
 $grayColor: #7d7789;
 $pasteGreen: #56cbbd;
 
+.bg_white {
+  background-color: white !important;
+}
+.text_white {
+  color: white !important;
+}
 .text_primaryColor {
   color: $primaryColor;
 }
@@ -25,6 +31,9 @@ $pasteGreen: #56cbbd;
 .text_underline_primaryColor {
   text-decoration: underline;
   color: $primaryColor;
+}
+.bg_primaryColor {
+  background: $primaryColor;
 }
 .bg_primaryLightBgColor {
   background: $primaryLightBgColor;

@@ -1,4 +1,4 @@
-import { serviceI, skillsI } from "./interfaces";
+import { portfolioI, serviceI, skillsI } from "./interfaces";
 
 export type serviceProps = {
   service: serviceI;
@@ -8,4 +8,8 @@ export type skillProps = {
   skill: skillsI;
   key: number;
   color: string;
+};
+export type portfolioProps = {
+  portfolio: portfolioI;
+  key: number;
 };

@@ -29,6 +29,13 @@ a {
 * {
   box-sizing: border-box;
 }
+.hireme_btn {
+  padding: 0.9em 3.4em;
+  font-size: 1.25em;
+}
+.navigation_container {
+  z-index: 99;
+}
 .category_text {
   font-weight: 600;
   font-size: 1.375em;
@@ -79,10 +86,6 @@ a {
       font-size: 4em;
       height: 93px;
       font-weight: 700;
-    }
-    .hireme_btn {
-      padding: 0.9em 3.4em;
-      font-size: 1.25em;
     }
     .header_description {
       font-family: "Lato", sans-serif;
@@ -279,9 +282,189 @@ a {
     }
   }
 }
-.skill_card {
-  background-color: white;
-  padding: 2.06em 1.75em 2.18em;
-  box-shadow: 0 0 5.31em 0 #e9eefc;
-  border-radius: 1.25em;
+.skills_container {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 392px;
+    width: 123px;
+    top: 15%;
+    right: 0;
+    background: url("../assets/circle-bg-img.png") no-repeat top left;
+  }
+  &::before {
+    @include animationShape(
+      60px,
+      60px,
+      10%,
+      "",
+      "",
+      100px,
+      "../../assets/half-circle.png"
+    );
+  }
+  .heading_text {
+    &::before {
+      @include animationShape(
+        36px,
+        36px,
+        "",
+        10%,
+        10%,
+        "",
+        "../../assets/triangle-icon.png"
+      );
+    }
+  }
+  .skill_card {
+    background-color: white;
+    padding: 2.06em 1.75em 2.18em;
+    box-shadow: 0 0 5.31em 0 #e9eefc;
+    border-radius: 1.25em;
+    transition: 500ms transform ease-out;
+    &:hover {
+      box-shadow: 0 0 85px 0 #e9eefc;
+      transform: scale(1.05);
+    }
+  }
+}
+.portfolio_container {
+  position: relative;
+  .portfolio_card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    .portfolio_card_overlay {
+      visibility: hidden;
+      opacity: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0032387955182072714) 0%,
+        rgba(17, 19, 43, 0.6755077030812324) 70%
+      );
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      .portfolio_card_overlay_content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1.5em;
+      }
+      .portfolio_card_overlay_heading {
+        font-weight: 700;
+        font-size: 1.125em;
+        color: white;
+      }
+      .portfolio_card_overlay_p {
+        font-size: 1em;
+        color: white;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+      }
+      .portfolio_card_overlay_icon {
+        background-color: $secondaryColor;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        i {
+          color: white;
+          font-size: 1.25em;
+        }
+      }
+    }
+    &:hover {
+      .portfolio_card_overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../assets/portfolio-left-img.png") no-repeat;
+    top: 0;
+    left: 0;
+    height: 344px;
+    width: 352px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../assets/portfolio-right-img.png") no-repeat;
+    bottom: 0;
+    right: 0;
+    height: 292px;
+    width: 361px;
+  }
+}
+.contact_container {
+  .contact_info_card {
+    background-color: $primaryColor;
+    border-radius: 28px;
+    padding: 3em;
+    color: white;
+    .contact_list {
+      h6 {
+        font-size: 1.25em;
+        font-weight: 600;
+      }
+      .contact_icon {
+        width: 60px;
+        height: 60px;
+        background-color: $secondaryColor;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          transition: 500ms all ease-out;
+        }
+      }
+      &:hover {
+        .contact_icon {
+          img {
+            transform: translateY(-7px);
+          }
+        }
+      }
+    }
+  }
+  .contact_form {
+    position: relative;
+    &::before {
+      @include animationShape(
+        36px,
+        36px,
+        50%,
+        "",
+        "",
+        -150px,
+        "../../assets/curn-icon.png"
+      );
+    }
+    .input_field,
+    .input_field_textarea {
+      width: 100%;
+      box-shadow: 0 0 85px 0 #e9eefc;
+      border: 1px solid #e9eefc;
+      border-radius: 38px;
+      padding: 1em 1.5em;
+      outline: none;
+      &:focus {
+        border: 1px solid $primaryColor;
+      }
+    }
+  }
 }
