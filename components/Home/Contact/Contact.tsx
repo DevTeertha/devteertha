@@ -11,7 +11,7 @@ const Contact = () => {
             {contact.heading}
           </h3>
           <div>
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-9 my-11">
+            <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-9 my-11">
               <div>
                 <div className="contact_info_card">
                   <div className="py-6 contact_list">

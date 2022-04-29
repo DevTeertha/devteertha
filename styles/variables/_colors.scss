@@ -9,6 +9,11 @@ $primaryDarkColor: #07003b;
 $secondaryColor: #fca61f;
 $grayColor: #7d7789;
 $pasteGreen: #56cbbd;
+$darkPrimary: #211e39;
+
+.bg_dark_primary {
+  background-color: $darkPrimary;
+}
 
 .bg_white {
   background-color: white !important;

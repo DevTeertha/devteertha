@@ -3,6 +3,11 @@
     @content;
   }
 }
+@mixin mobile {
+  @media screen and (max-width: 639px) {
+    @content;
+  }
+}
 @include laptop() {
   .navigation_container {
     .nav_menu {
@@ -13,5 +18,10 @@
         display: block !important;
       }
     }
+  }
+}
+@include mobile() {
+  * {
+    font-size: 10px;
   }
 }

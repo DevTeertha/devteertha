@@ -52,7 +52,7 @@ const Header = () => {
             </div>
           </div>
           <div className="social_icons_container">
-            <ul>
+            <ul className="footer_social_icons">
               {basicInfo?.socialMedias.map((social, key) => {
                 return (
                   <li key={key} className="my-5">

@@ -87,3 +87,7 @@
 .common_underline_btn {
   @include common_underline_button($primaryColor, $secondaryColor, 1.5em);
 }
+.common_underline_navLink {
+  @include common_underline_button(white, $secondaryColor, 1em);
+  border-bottom: 2px solid transparent;
+}

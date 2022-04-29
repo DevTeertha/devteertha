@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Sticky from "react-sticky-el";
+import Footer from "../components/Footer/Footer";
 import Contact from "../components/Home/Contact/Contact";
 import Header from "../components/Home/Header";
 import Portfolio from "../components/Home/Portfolio/Portfolio";
@@ -28,6 +29,9 @@ const Home: NextPage = () => {
         </section>
         <section className="bg_white">
           <Contact />
+        </section>
+        <section className="bg_dark_primary">
+          <Footer />
         </section>
       </div>
     </>
