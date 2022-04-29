@@ -16,8 +16,8 @@ const Footer = () => {
               </Link>
             </h5>
             <div>
-              <ul className="flex justify-center items-center py-9 text-gray-300">
-                <li className="px-5 border-r-2 border-gray-300">
+              <ul className="flex flex-wrap justify-center items-center py-9 text-gray-300">
+                <li className="px-5 md:border-r-2 md:border-gray-300">
                   <a className="common_underline_navLink" href="/">
                     Home
                   </a>
@@ -27,7 +27,7 @@ const Footer = () => {
                     About
                   </a>
                 </li>
-                <li className="px-5 border-x-2 border-gray-300">
+                <li className="px-5 md:border-x-2 md:border-gray-300">
                   <a className="common_underline_navLink" href="/">
                     Services
                   </a>
@@ -37,7 +37,7 @@ const Footer = () => {
                     Portfolio
                   </a>
                 </li>
-                <li className="px-5 border-x-2 border-gray-300">
+                <li className="px-5 md:border-x-2 md:border-gray-300">
                   <a className="common_underline_navLink" href="/">
                     Blog
                   </a>

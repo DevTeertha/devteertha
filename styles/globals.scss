@@ -326,7 +326,7 @@ a {
     box-shadow: 0 0 5.31em 0 #e9eefc;
     border-radius: 1.25em;
     transition: 500ms transform ease-out;
-    z-index: 9;
+    z-index: 99;
     &:hover {
       box-shadow: 0 0 85px 0 #e9eefc;
       transform: scale(1.05);

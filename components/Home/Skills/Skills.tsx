@@ -25,7 +25,7 @@ const Skills = () => {
           <h3 className="heading_text sm:w-full md:w-7/12 mx-auto mt-5 text-center">
             {skills.heading}
           </h3>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-9 my-11">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-9 my-11">
             {skills.skills.map((skill: skillsI, key: number) => {
               const color = randomColor(colorArr);
               return <SkillCard skill={skill} key={key} color={color} />;
