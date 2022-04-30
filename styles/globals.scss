@@ -103,7 +103,7 @@ a {
         top: 25%;
         left: 0;
         z-index: 99;
-        background: url("../assets/curn-icon.png") no-repeat top left;
+        background: url("/images/curn-icon.png") no-repeat top left;
         @include animation_moveY(-15px);
       }
       .header_img_card1 {
@@ -115,7 +115,7 @@ a {
             "",
             "",
             0,
-            "../../assets/half-circle.png"
+            "/images/half-circle.png"
           );
         }
         &::before {
@@ -126,7 +126,7 @@ a {
             10%,
             "",
             0,
-            "../../assets/triangle-icon.png"
+            "/images/triangle-icon.png"
           );
         }
       }
@@ -142,7 +142,7 @@ a {
     width: 150px;
     top: 15%;
     left: 0;
-    background: url("../assets/circle-bg-left-img.png") no-repeat top left;
+    background: url("/images/circle-bg-left-img.png") no-repeat top left;
   }
   &::before {
     @include animationShape(
@@ -152,7 +152,7 @@ a {
       "",
       100px,
       "",
-      "../../assets/half-circle.png"
+      "/images/half-circle.png"
     );
   }
   .heading_text {
@@ -164,7 +164,7 @@ a {
         "",
         "",
         250px,
-        "../../assets/curn-icon.png"
+        "/images/curn-icon.png"
       );
     }
   }
@@ -294,7 +294,7 @@ a {
     width: 123px;
     top: 15%;
     right: 0;
-    background: url("../assets/circle-bg-img.png") no-repeat top left;
+    background: url("/images/circle-bg-img.png") no-repeat top left;
   }
   &::before {
     @include animationShape(
@@ -304,7 +304,7 @@ a {
       "",
       "",
       100px,
-      "../../assets/half-circle.png"
+      "/images/half-circle.png"
     );
   }
   .heading_text {
@@ -316,7 +316,7 @@ a {
         10%,
         10%,
         "",
-        "../../assets/triangle-icon.png"
+        "/images/triangle-icon.png"
       );
     }
   }
@@ -339,6 +339,7 @@ a {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    z-index: 1;
     .portfolio_card_overlay {
       visibility: hidden;
       opacity: 0;
@@ -397,7 +398,7 @@ a {
   &::after {
     content: "";
     position: absolute;
-    background: url("../assets/portfolio-left-img.png") no-repeat;
+    background: url("/images/portfolio-left-img.png") no-repeat;
     top: 0;
     left: 0;
     height: 344px;
@@ -406,7 +407,7 @@ a {
   &::before {
     content: "";
     position: absolute;
-    background: url("../assets/portfolio-right-img.png") no-repeat;
+    background: url("/images/portfolio-right-img.png") no-repeat;
     bottom: 0;
     right: 0;
     height: 292px;
@@ -455,7 +456,7 @@ a {
         "",
         "",
         0,
-        "../../assets/curn-icon.png"
+        "/images/curn-icon.png"
       );
     }
     .input_field,
@@ -477,7 +478,7 @@ a {
   &::after {
     content: "";
     position: absolute;
-    background: url("../assets/portfolio-left-img.png") no-repeat;
+    background: url("/images/portfolio-left-img.png") no-repeat;
     top: 0;
     left: 0;
     height: 344px;
@@ -487,7 +488,7 @@ a {
   &::before {
     content: "";
     position: absolute;
-    background: url("../assets/portfolio-right-img.png") no-repeat;
+    background: url("/images/portfolio-right-img.png") no-repeat;
     bottom: 0;
     right: 0;
     height: 292px;

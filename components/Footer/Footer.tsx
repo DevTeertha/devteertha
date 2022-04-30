@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <div className="footer_container pt-16">
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           <div className="text-center">
             <h5 className="my_logo text-white text-xl">
               <Link href="/">

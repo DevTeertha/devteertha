@@ -6,9 +6,9 @@
       "name": "RedLight Wedding",
       "description": "RedLight Wedding is an event planning website. Users can book any event or plan for their wedding. I had completed this project in only 4 days.",
       "images": [
-        "https://i.ibb.co/kK8f78X/redlight-wedding1.png",
-        "https://i.ibb.co/PQvfnFB/redlight-wedding2.png",
-        "https://i.ibb.co/CQqHWp2/redlight-wedding3.png"
+        "/images/portfolios/redlight-wedding1.png",
+        "/images/portfolios/redlight-wedding2.png",
+        "/images/portfolios/redlight-wedding3.png"
       ],
       "features": [
         {
@@ -43,9 +43,9 @@
       "name": "Bazar Deal",
       "description": "Bazar Deal is a simple e-commerce website. I just made this only 3-4 days. Actually, I made this as an assignment for my web development course.",
       "images": [
-        "https://i.ibb.co/4tS5w8p/bazar-deal1.png",
-        "https://i.ibb.co/vB4RXbx/bazar-deal2.png",
-        "https://i.ibb.co/4MTZw4N/bazar-deal3.png"
+        "/images/portfolios/bazar-deal1.png",
+        "/images/portfolios/bazar-deal2.png",
+        "/images/portfolios/bazar-deal3.png"
       ],
       "features": [
         {

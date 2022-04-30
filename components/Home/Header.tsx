@@ -1,7 +1,5 @@
-import Image from "next/image";
 import React from "react";
 import { Typewriting } from "react-typewriting";
-import profileImage from "../../assets/banner-right-img.png";
 import basicInfo from "../../FakeDB/basicInfo.json";
 import { TypewritingRenderArgs } from "../interfaces/interfaces";
 const Header = () => {
@@ -41,9 +39,9 @@ const Header = () => {
             </div>
             <div className="pt-3">
               <div className="header_image_container">
-                <Image
+                <img
                   className="animation_moveX"
-                  src={profileImage}
+                  src={basicInfo.image}
                   alt="profileImage"
                 />
                 <div className="header_img_card1"></div>

@@ -4,7 +4,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <section className="navigation_container py-6">
-      <div className="container mx-auto">
+      <div className="sm:container mx-auto">
         <div className="flex items-center justify-between">
           <div>
             <h5 className="my_logo">

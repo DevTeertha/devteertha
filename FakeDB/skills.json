@@ -5,58 +5,77 @@
   "url": "",
   "skills": [
     {
-      "name": "HTML/CSS",
+      "icon": "/images/logo/html.png",
+      "name": "HTML",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/css.png",
+      "name": "CSS",
+      "percentage": 90
+    },
+    {
+      "icon": "/images/logo/sass.png",
       "name": "SASS",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/bootstrap.png",
       "name": "Bootstrap",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/tailwindcss.png",
       "name": "Tailwind CSS",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/js.png",
       "name": "JavaScript",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/ts.png",
       "name": "TypeScript",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/react.png",
       "name": "React JS",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/nextjs.png",
       "name": "Next JS",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/nodejs.png",
       "name": "Node JS",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/expressjs.png",
       "name": "Express JS",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/restapi.png",
       "name": "REST APIs",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/mongodb.png",
       "name": "MongoDB",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/mysql.png",
       "name": "MySQL",
       "percentage": 90
     },
     {
+      "icon": "/images/logo/figma.png",
       "name": "Figma",
       "percentage": 90
     }

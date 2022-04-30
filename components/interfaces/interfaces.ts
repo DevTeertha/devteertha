@@ -22,4 +22,5 @@ export interface portfolioI {
 export interface skillsI {
   name: string;
   percentage: number;
+  icon: string;
 }

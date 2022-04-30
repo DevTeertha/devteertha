@@ -5,17 +5,17 @@
     {
       "title": "UI/UX Design",
       "description": "Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam.",
-      "icon": "../../../assets/service-icon1.png"
+      "icon": "/images/service-icon1.png"
     },
     {
       "title": "Front End Development",
       "description": "Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam.",
-      "icon": "../../../assets/service-icon2.png"
+      "icon": "/images/service-icon2.png"
     },
     {
       "title": "Back End Development",
       "description": "Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam.",
-      "icon": "../../../assets/service-icon3.png"
+      "icon": "/images/service-icon3.png"
     }
   ]
 }
