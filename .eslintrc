@@ -7,6 +7,7 @@
     "plugin:jsx-a11y/recommended"
   ],
   "parser": "@babel/eslint-parser",
+  "requireConfigFile": false,
   "parserOptions": {
     "ecmaVersion": 8
   },
