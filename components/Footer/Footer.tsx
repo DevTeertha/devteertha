@@ -37,12 +37,7 @@ const Footer = () => {
                     Portfolio
                   </a>
                 </li>
-                <li className="px-5 md:border-x-2 md:border-gray-300">
-                  <a className="common_underline_navLink" href="/">
-                    Blog
-                  </a>
-                </li>
-                <li className="px-5">
+                <li className="px-5 md:border-l-2 md:border-gray-300">
                   <a className="common_underline_navLink" href="/">
                     Contact
                   </a>

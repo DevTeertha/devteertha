@@ -1,7 +1,16 @@
 {
   "category": "Get in Touch",
   "heading": "Any Questions? Feel Free to Contact",
-  "address": "121 King Street Melbourne, 3000, Australia",
-  "email": "devteertha28@gmail.com",
-  "mobile": "+880 1672066834"
+  "address": {
+    "address": "179 no college road, Golachipa, Narayanganj",
+    "icon": "/images/location-icon.png"
+  },
+  "email": {
+    "email": "devteertha28@gmail.com",
+    "icon": "/images/message-icon.png"
+  },
+  "mobile": {
+    "mobile": "+880 1672066834",
+    "icon": "/images/phone-icon.png"
+  }
 }

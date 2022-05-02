@@ -10,11 +10,12 @@
     "lint-install": "yarn add -D prettier && yarn add -D babel-eslint && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@types/react-sticky-el": "^1.0.3",
     "next": "12.1.4",
     "react": "18.0.0",
-    "react-circular-progressbar": "^2.0.4",
     "react-dom": "18.0.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-sticky-el": "^2.0.9",
     "react-typewriting": "^2.2.0",
     "sass": "^1.50.0"

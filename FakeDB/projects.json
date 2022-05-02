@@ -1,0 +1,77 @@
+{
+  "category": "Creative Works",
+  "heading": "Check My Projects",
+  "portfolios": [
+    {
+      "name": "RedLight Wedding",
+      "description": "RedLight Wedding is an event planning website. Users can book any event or plan for their wedding. I had completed this project in only 4 days.",
+      "images": [
+        "/images/portfolios/redlight-wedding1.png",
+        "/images/portfolios/redlight-wedding2.png",
+        "/images/portfolios/redlight-wedding3.png"
+      ],
+      "features": [
+        {
+          "name": "Login Authentication with Google"
+        },
+        {
+          "name": "Payment Gatway Integration"
+        },
+        {
+          "name": "Protected Route"
+        },
+        {
+          "name": "Admin can make another admin, Add Services, Delete Services"
+        },
+        {
+          "name": "User can give review, order service"
+        }
+      ],
+      "technology": {
+        "frontend": ["Bootstrap", "React JS"],
+        "backend": ["Node JS", "Express JS", "MongoDB", "REST API"]
+      },
+      "links": {
+        "live": "https://redlight-wedding.web.app/",
+        "project": {
+          "client": "https://github.com/DevTeertha/RedLight-Wedding-Client",
+          "server": "https://github.com/DevTeertha/RedLight-Wedding-Server"
+        }
+      }
+    },
+    {
+      "name": "Bazar Deal",
+      "description": "Bazar Deal is a simple e-commerce website. I just made this only 3-4 days. Actually, I made this as an assignment for my web development course.",
+      "images": [
+        "/images/portfolios/bazar-deal1.png",
+        "/images/portfolios/bazar-deal2.png",
+        "/images/portfolios/bazar-deal3.png"
+      ],
+      "features": [
+        {
+          "name": "Login Authentication with Google"
+        },
+        {
+          "name": "Protected Route"
+        },
+        {
+          "name": "Admin can add new product, delete product"
+        },
+        {
+          "name": "User can order product and see their order list"
+        }
+      ],
+      "technology": {
+        "frontend": ["Bootstrap", "React JS"],
+        "backend": ["Node JS", "Express JS", "MongoDB", "REST API"]
+      },
+      "links": {
+        "live": "https://bazar-deal.web.app/",
+        "project": {
+          "client": "https://github.com/DevTeertha/Bazar-Deal-Client",
+          "server": "https://github.com/DevTeertha/Bazar-Deal-Server"
+        }
+      }
+    }
+  ]
+}

@@ -1,8 +1,7 @@
 import type { AppProps } from "next/app";
-import "react-circular-progressbar/dist/styles.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../styles/globals.scss";
-
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return <Component {...pageProps} />;
 }
 

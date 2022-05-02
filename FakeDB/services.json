@@ -4,18 +4,18 @@
   "services": [
     {
       "title": "UI/UX Design",
-      "description": "Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam.",
-      "icon": "/images/service-icon1.png"
+      "description": "Creating basic UI/UX design using figma/adobe xd. I'm also able to create prototype in figma.",
+      "icon": "/images/uiux.png"
     },
     {
       "title": "Front End Development",
-      "description": "Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam.",
-      "icon": "/images/service-icon2.png"
+      "description": "Creating Front End using HTML/CSS, SASS, CSS Framework, Vanila JS, TypeScript, React JS/Next JS, Redux and Consuming api.",
+      "icon": "/images/frontend.png"
     },
     {
       "title": "Back End Development",
-      "description": "Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam.",
-      "icon": "/images/service-icon3.png"
+      "description": "Create Back End server using Node JS, Express JS, Rest API. Also I'm able to connectivity with database such as MongoDB/MySQL.",
+      "icon": "/images/backend.png"
     }
   ]
 }

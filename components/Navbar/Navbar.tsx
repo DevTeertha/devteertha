@@ -1,7 +1,14 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const initialActiveState = {
+    home: false,
+    services: false,
+    projects: false,
+    about: false,
+  };
+  const [navbarActive, setNavbarActive] = useState(initialActiveState);
   return (
     <section className="navigation_container py-6">
       <div className="sm:container mx-auto">
@@ -22,26 +29,46 @@ const Navbar = () => {
                 <i className="fa-solid fa-bars text-xl"></i>
               </div>
               <ul className="nav_menu_ul flex items-center">
-                <li className="mx-4 nav_active">
+                <li
+                  onClick={() =>
+                    setNavbarActive({ ...initialActiveState, home: true })
+                  }
+                  className={`mx-4 ${navbarActive.home && "nav_active"}`}
+                >
                   <Link href="/">Home</Link>
                 </li>
-                <li className="mx-4">
-                  <Link href="/">Services</Link>
+                <li
+                  onClick={() =>
+                    setNavbarActive({ ...initialActiveState, services: true })
+                  }
+                  className={`mx-4 ${navbarActive.services && "nav_active"}`}
+                >
+                  <Link href="/#service_section">Services</Link>
                 </li>
-                <li className="mx-4">
+                <li
+                  onClick={() =>
+                    setNavbarActive({ ...initialActiveState, projects: true })
+                  }
+                  className={`mx-4 ${navbarActive.projects && "nav_active"}`}
+                >
+                  <Link href="/#projects_section">Projects</Link>
+                </li>
+                <li
+                  onClick={() =>
+                    setNavbarActive({ ...initialActiveState, about: true })
+                  }
+                  className={`mx-4 ${navbarActive.about && "nav_active"}`}
+                >
                   <Link href="/">About</Link>
                 </li>
-                <li className="mx-4">
-                  <Link href="/">Portfolio</Link>
-                </li>
-                <li className="mx-4">
+                {/* <li className="mx-4">
                   <Link href="/">Testimonials</Link>
                 </li>
                 <li className="mx-4">
                   <Link href="/">Blog</Link>
-                </li>
+                </li> */}
                 <li className="ml-10">
-                  <Link href="/">
+                  <Link href="#contact_section">
                     <a className="common_btn">Contact</a>
                   </Link>
                 </li>

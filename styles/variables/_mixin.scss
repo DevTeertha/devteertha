@@ -8,16 +8,20 @@
 ) {
   display: inline-block;
   background-color: $bgColor;
-  color: $textColor;
+  color: $textColor !important;
   border-radius: $borderRadius;
   font-size: $fontSize;
   transition: 500ms all ease-out;
   transition-property: transform;
   padding: 0.5em 1.8em;
   box-shadow: 0 0 85px 0 #e9eefc;
+  -webkit-border-radius: $borderRadius;
+  -moz-border-radius: $borderRadius;
+  -ms-border-radius: $borderRadius;
+  -o-border-radius: $borderRadius;
   &:hover {
     background-color: $hoverBgColor;
-    color: $hoverTextColor;
+    color: $textColor;
     transform: translateY(-5px);
   }
 }
@@ -84,8 +88,25 @@
     100px
   );
 }
+.common_btn_disabled {
+  @include common_button(#ff7268, white, #ff7268, white, 1em, 100px);
+}
+.common_btn_sm {
+  @include common_button(
+    $secondaryColor,
+    white,
+    $primaryColor,
+    white,
+    0.5em,
+    100px
+  );
+  padding: 0.1em 2em;
+}
 .common_underline_btn {
   @include common_underline_button($primaryColor, $secondaryColor, 1.5em);
+}
+.common_underline_btn_sm {
+  @include common_underline_button($primaryColor, $secondaryColor, 1em);
 }
 .common_underline_navLink {
   @include common_underline_button(white, $secondaryColor, 1em);

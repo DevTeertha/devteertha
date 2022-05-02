@@ -1,15 +1,24 @@
-$primaryColor: #6f34fe;
-$primaryColor2: #3f396d;
-$primaryLightBgColor: linear-gradient(
-  33deg,
-  rgba(242, 242, 255, 1) 0%,
-  rgba(235, 249, 255, 1) 100%
-);
-$primaryDarkColor: #07003b;
-$secondaryColor: #fca61f;
-$grayColor: #7d7789;
-$pasteGreen: #56cbbd;
-$darkPrimary: #211e39;
+// $primaryColor: #6f34fe;
+// $primaryColor2: #3f396d;
+// $primaryLightBgColor: linear-gradient(
+//   33deg,
+//   rgba(242, 242, 255, 1) 0%,
+//   rgba(235, 249, 255, 1) 100%
+// );
+// $primaryDarkColor: #07003b;
+// $secondaryColor: #fca61f;
+// $grayColor: #7d7789;
+// $pasteGreen: #56cbbd;
+// $darkPrimary: #211e39;
+$myColor: #f9218d;
+$primaryColor: #2b044d;
+$primaryColor2: $primaryColor;
+$primaryLightBgColor: linear-gradient(33deg, #f8fafc 0%, #ffffff 100%);
+$primaryDarkColor: #003049;
+$secondaryColor: #f92f21;
+$grayColor: #94a3b8;
+$pasteGreen: #56cb8b;
+$darkPrimary: $primaryColor;
 
 .bg_dark_primary {
   background-color: $darkPrimary;

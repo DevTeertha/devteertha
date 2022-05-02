@@ -30,8 +30,12 @@ const Header = () => {
                     <button className="hireme_btn common_btn">Hire Me</button>
                   </div>
                   <div className="ml-6">
-                    <a href="/" className="common_underline_btn">
-                      See My Work
+                    <a
+                      target={"_blank"}
+                      href="https://drive.google.com/file/d/1U8sRiGqP4N_KXz9FjcWu6dBRqMzdHoM9/view?usp=sharing"
+                      className="common_underline_btn"
+                    >
+                      See My Resume
                     </a>
                   </div>
                 </div>
