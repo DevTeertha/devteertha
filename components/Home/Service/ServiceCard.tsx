@@ -3,7 +3,7 @@ import { serviceProps } from "../../interfaces/types";
 
 const ServiceCard = ({ service }: serviceProps) => {
   return (
-    <div className="service_card py-5">
+    <div data-aos="zoom-in" className="service_card py-5">
       <div className="grid grid-cols-3 justify-between">
         <div className="service_icon">
           <img className="w-100" src={service.icon} alt="icon"></img>

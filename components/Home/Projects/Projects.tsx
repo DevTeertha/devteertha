@@ -15,7 +15,7 @@ const Projects = () => {
           </h3>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-9 my-11">
             {portfolio.portfolios.map((portfolio: any, key: number) => (
-              <PortfolioCard portfolio={portfolio} key={key} />
+              <PortfolioCard portfolio={portfolio} id={key + 1} key={key} />
             ))}
           </div>
         </div>

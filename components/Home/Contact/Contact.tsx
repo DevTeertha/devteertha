@@ -42,7 +42,7 @@ const Contact = () => {
           </h3>
           <div>
             <div className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-9 my-11">
-              <div>
+              <div data-aos="fade-right">
                 <div className="contact_info_card">
                   <div className="py-6 contact_list">
                     <div className="flex">
@@ -85,7 +85,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="xl:col-span-2">
+              <div data-aos="fade-left" className="xl:col-span-2">
                 <form ref={form} onSubmit={sendEmail} className="contact_form">
                   <div className="py-3 grid sm:grid-cols-2 gap-5">
                     <div>

@@ -75,6 +75,16 @@
       "percentage": 90
     },
     {
+      "icon": "/images/logo/c.png",
+      "name": "C/C++",
+      "percentage": 90
+    },
+    {
+      "icon": "/images/logo/java.png",
+      "name": "Java",
+      "percentage": 90
+    },
+    {
       "icon": "/images/logo/figma.png",
       "name": "Figma",
       "percentage": 90

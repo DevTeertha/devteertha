@@ -2,10 +2,13 @@ import Link from "next/link";
 import React from "react";
 import { portfolioProps } from "../../interfaces/types";
 
-const ProjectCard = ({ portfolio }: portfolioProps) => {
+const ProjectCard = ({ portfolio, id }: portfolioProps) => {
   return (
     <Link href={`/projects/${portfolio.name}`}>
-      <div className="portfolio_card">
+      <div
+        data-aos={id % 2 === 0 ? "fade-up-left" : "fade-up-right"}
+        className={`portfolio_card`}
+      >
         <img src={portfolio.images[0]} alt={portfolio.images[0]} />
         <div className="portfolio_card_overlay">
           <div className="portfolio_card_overlay_content">

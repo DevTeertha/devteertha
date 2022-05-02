@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import React from "react";
 import Sticky from "../../components/Custom/Sticky";
 import Footer from "../../components/Footer/Footer";
@@ -8,11 +7,7 @@ import ProjectDetail from "../../components/Home/Projects/ProjectDetail";
 import Navbar from "../../components/Navbar/Navbar";
 import projects from "../../FakeDB/projects.json";
 
-const ProjectDetails = () => {
-  const router = useRouter();
-  const projectDetails = projects.portfolios.find(
-    (project: any, key: number) => project.name === router.query.name
-  );
+const ProjectDetails = ({ projectDetails }: any) => {
   return (
     <>
       <Head>
@@ -39,3 +34,20 @@ const ProjectDetails = () => {
 };
 
 export default ProjectDetails;
+
+export async function getStaticPaths() {
+  return {
+    paths: projects.portfolios.map((portfolio) => ({
+      params: { name: portfolio.name },
+    })),
+    fallback: false, // false or 'blocking'
+  };
+}
+export async function getStaticProps({ params }: any) {
+  const projectDetails = projects.portfolios.find(
+    (project: any, key: number) => project.name === params.name
+  );
+  return {
+    props: { projectDetails }, // will be passed to the page component as props
+  };
+}

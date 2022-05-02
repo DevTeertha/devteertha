@@ -72,6 +72,38 @@
           "server": "https://github.com/DevTeertha/Bazar-Deal-Server"
         }
       }
+    },
+    {
+      "name": "City Rider",
+      "description": "City Rider is a very simple application.",
+      "images": [
+        "/images/portfolios/city_rider1.png",
+        "/images/portfolios/city_rider2.png"
+      ],
+      "features": [
+        {
+          "name": "Login Authentication with Google"
+        },
+        {
+          "name": "Protected Route"
+        },
+        {
+          "name": "Admin can add new product, delete product"
+        },
+        {
+          "name": "User can order product and see their order list"
+        }
+      ],
+      "technology": {
+        "frontend": ["Bootstrap", "React JS"],
+        "backend": []
+      },
+      "links": {
+        "live": "https://bazar-deal.web.app/",
+        "project": {
+          "client": "https://github.com/DevTeertha/Bazar-Deal-Client"
+        }
+      }
     }
   ]
 }

@@ -7,9 +7,9 @@ const Header = () => {
     <>
       <section className="header_container pt-6">
         <div className="container mx-auto">
-          <div className="grid items-center sm:grid-cols-1 lg:grid-cols-2">
-            <div className="pt-3">
-              <div>
+          <div className="grid items-center sm:grid-cols-1 lg:grid-cols-3">
+            <div className="col-span-2 pt-3">
+              <div className="animate__animated animate__fadeInLeft">
                 <h2 className="header_title">{basicInfo?.intro}</h2>
                 <Typewriting strings={basicInfo?.title}>
                   {({
@@ -41,9 +41,10 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="pt-3">
+            <div data-aos="fade-down" className="pt-3">
               <div className="header_image_container">
                 <img
+                  data-aos="fade-left"
                   className="animation_moveX"
                   src={basicInfo.image}
                   alt="profileImage"

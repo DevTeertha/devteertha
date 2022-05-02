@@ -38,7 +38,10 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="px-5 md:border-l-2 md:border-gray-300">
-                  <a className="common_underline_navLink" href="/">
+                  <a
+                    className="common_underline_navLink"
+                    href="/#contact_section"
+                  >
                     Contact
                   </a>
                 </li>

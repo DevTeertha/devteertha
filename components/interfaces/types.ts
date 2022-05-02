@@ -7,9 +7,10 @@ export type serviceProps = {
 export type skillProps = {
   skill: skillsI;
   key: number;
-  color: string;
+  id: number;
 };
 export type portfolioProps = {
   portfolio: portfolioI;
   key: number;
+  id: number;
 };

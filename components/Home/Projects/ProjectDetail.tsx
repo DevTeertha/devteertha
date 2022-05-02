@@ -3,15 +3,15 @@ import { Carousel } from "react-responsive-carousel";
 const ProjectDetail = ({ projectDetails }: any) => {
   return (
     <section className="py-16">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-9">
           <div>
             <div style={{ position: "sticky", top: "113px" }}>
               <Carousel>
-                {projectDetails?.images.map((image: string, key: number) => {
+                {projectDetails?.images?.map((image: string, key: number) => {
                   return (
                     <div key={key}>
-                      <img src={image} />
+                      <img className="w-full" src={image} />
                     </div>
                   );
                 })}
@@ -73,7 +73,7 @@ const ProjectDetail = ({ projectDetails }: any) => {
                 </h6>
                 <h6 className="py-1 text-xl">
                   Back End:{" "}
-                  {projectDetails?.technology?.backend.map(
+                  {projectDetails?.technology?.backend?.map(
                     (tech: any, key: number) => {
                       return (
                         <span className="technology_box" key={key}>
