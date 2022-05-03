@@ -1,0 +1,10 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/jsx-no-target-blank": 0,
+    "@next/next/no-html-link-for-pages": 0,
+    "@next/next/no-img-element": 0,
+    "jsx-a11y/alt-text": 0,
+    "@next/next/link-passhref": 0
+  }
+}
