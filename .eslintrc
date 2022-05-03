@@ -1,48 +1,84 @@
+// {
+//   "root": true,
+//   "extends": [
+//     "airbnb",
+//     "airbnb/hooks",
+//     "eslint:recommended",
+//     "prettier",
+//     "prettier/react",
+//     "plugin:jsx-a11y/recommended"
+//   ],
+//   "parser": "@babel/eslint-parser",
+//   "parserOptions": {
+//     "requireConfigFile": false,
+//     "ecmaVersion": 8,
+//     "babelOptions": {
+//       "presets": ["@babel/preset-react"]
+//     }
+//   },
+//   "env": {
+//     "browser": true,
+//     "node": true,
+//     "es6": true,
+//     "jest": true
+//   },
+//   "rules": {
+//     "react/react-in-jsx-scope": 0,
+//     "react-hooks/rules-of-hooks": "error",
+//     "no-console": 0,
+//     "react/state-in-constructor": 0,
+//     "indent": 0,
+//     "linebreak-style": 0,
+//     "react/prop-types": 0,
+//     "jsx-a11y/click-events-have-key-events": 0,
+//     "react/jsx-filename-extension": [
+//       1,
+//       {
+//         "extensions": [".js", ".jsx"]
+//       }
+//     ],
+//     "prettier/prettier": [
+//       "error",
+//       {
+//         "trailingComma": "es5",
+//         "singleQuote": true,
+//         "printWidth": 100,
+//         "tabWidth": 4,
+//         "semi": true,
+//         "endOfLine": "auto"
+//       }
+//     ]
+//   },
+//   "plugins": ["prettier", "react", "react-hooks"]
+// }
 {
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint", "jest"],
   "extends": [
-    "airbnb",
-    "airbnb/hooks",
     "eslint:recommended",
-    "prettier",
-    "plugin:jsx-a11y/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+    "prettier"
   ],
-  "parser": "@babel/eslint-parser",
-  "requireConfigFile": false,
+  "rules": {
+    "@typescript-eslint/no-explicit-any": 0,
+    "react/jsx-no-target-blank": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": 0
+  },
   "parserOptions": {
-    "ecmaVersion": 8
+    "ecmaVersion": 8,
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "linkComponents": [{ "name": "Link", "linkAttribute": "href" }]
   },
   "env": {
-    "browser": true,
-    "node": true,
-    "es6": true,
-    "jest": true
-  },
-  "rules": {
-    "react/react-in-jsx-scope": 0,
-    "react-hooks/rules-of-hooks": "error",
-    "no-console": 0,
-    "react/state-in-constructor": 0,
-    "indent": 0,
-    "linebreak-style": 0,
-    "react/prop-types": 0,
-    "jsx-a11y/click-events-have-key-events": 0,
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [".js", ".jsx"]
-      }
-    ],
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "es5",
-        "singleQuote": true,
-        "printWidth": 100,
-        "tabWidth": 4,
-        "semi": true,
-        "endOfLine": "auto"
-      }
-    ]
-  },
-  "plugins": ["prettier", "react", "react-hooks"]
+    "browser": true
+  }
 }

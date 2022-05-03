@@ -45,7 +45,7 @@ export async function getStaticPaths() {
 }
 export async function getStaticProps({ params }: any) {
   const projectDetails = projects.portfolios.find(
-    (project: any, key: number) => project.name === params.name
+    (project: any) => project.name === params.name
   );
   return {
     props: { projectDetails }, // will be passed to the page component as props
