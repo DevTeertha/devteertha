@@ -1,3 +1,8 @@
+@mixin largeScreen {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
 @mixin laptop {
   @media screen and (max-width: 1024px) {
     @content;
@@ -6,6 +11,11 @@
 @mixin mobile {
   @media screen and (max-width: 639px) {
     @content;
+  }
+}
+@include largeScreen() {
+  #mobile-nav-collapse-body {
+    display: none !important;
   }
 }
 @include laptop() {

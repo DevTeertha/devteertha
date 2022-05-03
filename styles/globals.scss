@@ -88,6 +88,13 @@ body::-webkit-scrollbar-thumb {
       color: $primaryColor;
       cursor: pointer;
     }
+    .nav_menu_ul_mobile {
+      li {
+        a {
+          color: #0f021b;
+        }
+      }
+    }
     ul {
       li {
         font-size: 1.25em;
