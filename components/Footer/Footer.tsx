@@ -3,7 +3,7 @@ import React from "react";
 import basicInfo from "../../FakeDB/basicInfo.json";
 const Footer = () => {
   return (
-    <div>
+    <div className="bg_primaryLightBgColor">
       <div className="footer_container pt-16">
         <div className="md:container mx-auto">
           <div className="text-center">

@@ -25,9 +25,7 @@ const ProjectDetails = ({ projectDetails }: any) => {
         </Sticky>
         <ProjectDetail projectDetails={projectDetails} />
         <Contact />
-        <footer className="bg_dark_primary">
-          <Footer />
-        </footer>
+        <Footer />
       </main>
     </>
   );
