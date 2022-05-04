@@ -36,7 +36,6 @@ const Contact = () => {
     <div className="py-16">
       <div className="contact_container">
         <div className="container mx-auto">
-          <p className="category_text text-center">{contact.category}</p>
           <h3 className="heading_text sm:w-full md:w-7/12 mx-auto mt-5 text-center">
             {contact.heading}
           </h3>
@@ -48,7 +47,7 @@ const Contact = () => {
                     <div className="flex">
                       <div>
                         <div className="contact_icon">
-                          <img src={contact.address.icon} alt="" />
+                          <i className={contact.address.icon}></i>
                         </div>
                       </div>
                       <div className="ml-5">
@@ -61,7 +60,7 @@ const Contact = () => {
                     <div className="flex">
                       <div>
                         <div className="contact_icon">
-                          <img src={contact.email.icon} alt="" />
+                          <i className={contact.email.icon}></i>
                         </div>
                       </div>
                       <div className="ml-5">
@@ -74,7 +73,7 @@ const Contact = () => {
                     <div className="flex">
                       <div>
                         <div className="contact_icon">
-                          <img src={contact.mobile.icon} alt="" />
+                          <i className={contact.mobile.icon}></i>
                         </div>
                       </div>
                       <div className="ml-5">
@@ -87,7 +86,7 @@ const Contact = () => {
               </div>
               <div data-aos="fade-left" className="xl:col-span-2">
                 <form ref={form} onSubmit={sendEmail} className="contact_form">
-                  <div className="py-3 grid sm:grid-cols-2 gap-5">
+                  <div className="py-3 grid sm:grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
                       <input
                         className="input_field"
@@ -105,7 +104,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  <div className="py-3 grid sm:grid-cols-2 gap-5">
+                  <div className="py-3 grid sm:grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
                       <input
                         className="input_field"

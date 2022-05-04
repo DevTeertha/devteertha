@@ -7,20 +7,24 @@
   $borderRadius
 ) {
   display: inline-block;
-  background-color: $bgColor;
+  background: linear-gradient(180deg, #fabf12 0%, #fb992d 100%);
   color: $textColor !important;
-  border-radius: $borderRadius;
   font-size: $fontSize;
   transition: 500ms all ease-out;
   transition-property: transform;
-  padding: 0.5em 1.8em;
-  box-shadow: 0 0 85px 0 #e9eefc;
+  -webkit-transition: 500ms all ease-out;
+  -moz-transition: 500ms all ease-out;
+  -ms-transition: 500ms all ease-out;
+  -o-transition: 500ms all ease-out;
+  padding: 0.9em 2em;
+  box-shadow: 0px 30px 50px 0px #fb992d66;
+  border-radius: $borderRadius;
   -webkit-border-radius: $borderRadius;
   -moz-border-radius: $borderRadius;
   -ms-border-radius: $borderRadius;
   -o-border-radius: $borderRadius;
   &:hover {
-    background-color: $hoverBgColor;
+    background: linear-gradient(180deg, #fb992d 0%, #fabf12 100%);
     color: $textColor;
     transform: translateY(-5px);
   }
@@ -80,7 +84,7 @@
 }
 .common_btn {
   @include common_button(
-    $secondaryColor,
+    $primaryColor,
     white,
     $primaryColor,
     white,
@@ -109,6 +113,6 @@
   @include common_underline_button($primaryColor, $secondaryColor, 1em);
 }
 .common_underline_navLink {
-  @include common_underline_button(white, $secondaryColor, 1em);
+  @include common_underline_button(#000000, $primaryColor, 1em);
   border-bottom: 2px solid transparent;
 }

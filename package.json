@@ -25,6 +25,7 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-responsive-carousel": "^3.2.23",
+    "react-scroll-to-top": "^1.0.8",
     "react-sticky-el": "^2.0.9",
     "react-typewriting": "^2.2.0",
     "sass": "^1.50.0"

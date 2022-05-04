@@ -11,11 +11,12 @@
 // $pasteGreen: #56cbbd;
 // $darkPrimary: #211e39;
 $myColor: #f9218d;
-$primaryColor: #2b044d;
-$primaryColor2: $primaryColor;
-$primaryLightBgColor: linear-gradient(33deg, #f8fafc 0%, #ffffff 100%);
+$primaryColor: #fba02a;
+$primaryColor2: #fabf12;
+$primaryLightBgColor: #fef8e6;
 $primaryDarkColor: #003049;
-$secondaryColor: #f92f21;
+// $secondaryColor: #f92f21;
+$secondaryColor: $primaryColor;
 $grayColor: #94a3b8;
 $pasteGreen: #56cb8b;
 $darkPrimary: $primaryColor;
@@ -35,6 +36,9 @@ $darkPrimary: $primaryColor;
 }
 .text_primaryColor {
   color: $primaryColor;
+}
+.text_primaryColor2 {
+  color: $primaryColor2;
 }
 .text_primaryDarkColor {
   color: $primaryDarkColor;

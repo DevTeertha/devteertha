@@ -3,14 +3,14 @@
   "heading": "Any Questions? Feel Free to Contact",
   "address": {
     "address": "179 no college road, Golachipa, Narayanganj",
-    "icon": "/images/location-icon.png"
+    "icon": "fa-solid fa-location-dot"
   },
   "email": {
     "email": "devteertha28@gmail.com",
-    "icon": "/images/message-icon.png"
+    "icon": "fa-solid fa-envelope"
   },
   "mobile": {
     "mobile": "+880 1672066834",
-    "icon": "/images/phone-icon.png"
+    "icon": "fa-solid fa-phone"
   }
 }

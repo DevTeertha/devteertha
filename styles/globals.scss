@@ -10,13 +10,13 @@
 @import "./variables/mixin";
 @import "./animations.scss";
 @import "./responsive.scss";
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   overflow-x: hidden;
@@ -52,6 +52,7 @@ body::-webkit-scrollbar-thumb {
   -o-border-radius: 100px;
 }
 .hireme_btn {
+  position: relative;
   padding: 0.9em 3.4em;
   font-size: 1.25em;
 }
@@ -65,20 +66,20 @@ body::-webkit-scrollbar-thumb {
   color: $secondaryColor;
 }
 .heading_text {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 3.25em;
-  color: $primaryColor2;
+  color: #000000;
   line-height: 53px;
+  span {
+    font-size: 1em;
+    color: $primaryColor2;
+  }
 }
 .navigation_container {
   .my_logo {
-    font-size: 1.25em;
+    font-size: 2em;
     font-weight: 700;
-    background: linear-gradient(
-      to right,
-      $primaryColor 0%,
-      $secondaryColor 100%
-    );
+    background: linear-gradient(180deg, #fabf12 0%, #fb992d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -90,20 +91,22 @@ body::-webkit-scrollbar-thumb {
     }
     .nav_menu_ul_mobile {
       li {
+        font-weight: 600;
         a {
-          color: #0f021b;
+          color: #000000;
         }
       }
     }
     ul {
       li {
         font-size: 1.25em;
-        color: #0f021b;
+        color: #000000;
+        font-weight: 600;
         &.nav_active {
-          color: $secondaryColor !important;
+          color: $primaryColor !important;
         }
         &:hover {
-          color: $secondaryColor !important;
+          color: $primaryColor !important;
           transition: 300ms all ease-out;
           transform: rotate(-1deg);
         }
@@ -112,59 +115,58 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .header_container {
-  margin-top: 2em;
   .container {
     position: relative;
     .header_title {
-      color: $secondaryColor;
-      font-size: 2.25em;
-      font-weight: 600;
+      color: #000000;
+      font-size: 3.75em;
+      font-weight: 500;
     }
     .header_name {
-      font-size: 3em;
+      font-size: 3.75em;
       // height: 93px;
-      font-weight: 700;
+      font-weight: 500;
     }
     .header_description {
-      font-family: "Lato", sans-serif;
-      color: #7d7789;
-      font-size: 1.17em;
+      color: #1f1f1f;
+      font-size: 1.25em;
       margin-bottom: 1.5em;
+      width: 80%;
     }
     .header_image_container {
       position: relative;
       &::after {
         content: "";
-        width: 36px;
-        height: 36px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        top: 25%;
-        left: 0;
+        top: 50%;
+        left: -100px;
         z-index: 99;
-        background: url("/images/curn-icon.png") no-repeat top left;
+        background: url("/images/blue-star.png") no-repeat top left;
         @include animation_moveY(-15px);
       }
       .header_img_card1 {
         &::after {
           @include animationShape(
-            60px,
-            60px,
-            10%,
+            40px,
+            40px,
+            -20px,
             "",
             "",
             0,
-            "/images/half-circle.png"
+            "/images/green-star.png"
           );
         }
         &::before {
           @include animationShape(
-            36px,
-            36px,
+            40px,
+            40px,
             "",
-            10%,
+            -50px,
             "",
-            0,
-            "/images/triangle-icon.png"
+            80px,
+            "/images/blue-star.png"
           );
         }
       }
@@ -173,36 +175,27 @@ body::-webkit-scrollbar-thumb {
 }
 .service_container {
   position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    height: 400px;
-    width: 150px;
-    top: 15%;
-    left: 0;
-    background: url("/images/circle-bg-left-img.png") no-repeat top left;
-  }
   &::before {
     @include animationShape(
       60px,
       60px,
-      10%,
+      0,
       "",
       100px,
       "",
-      "/images/half-circle.png"
+      "/images/green-star.png"
     );
   }
   .heading_text {
     &::before {
       @include animationShape(
-        36px,
-        36px,
-        50%,
+        40px,
+        40px,
         "",
+        -100px,
         "",
-        250px,
-        "/images/curn-icon.png"
+        220px,
+        "/images/blue-star.png"
       );
     }
   }
@@ -285,8 +278,8 @@ body::-webkit-scrollbar-thumb {
   background: #fff;
   border: 1px solid transparent;
   padding: 2.5em 2.25em;
-  border-radius: 20px;
-  box-shadow: 0 0 85px 0 #e9eefc;
+  border-radius: 30px;
+  box-shadow: 0px 35px 65px rgba(0, 0, 0, 0.1);
   @include transition(500ms, transform);
   z-index: 9;
 
@@ -300,75 +293,58 @@ body::-webkit-scrollbar-thumb {
     }
   }
   h2 {
-    color: $primaryColor2;
-    font-weight: 700;
-    font-size: 1.625em;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.375em;
+    text-align: center;
   }
   p {
     font-size: 1.125em;
-    line-height: 1.75em;
-    color: $grayColor;
-    font-family: "Lato", sans-serif;
+    color: #1f1f1f;
+    text-align: center;
   }
   .service_icon {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    background: #f8f0ff;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
     img {
-      height: 66px;
-      width: 66px;
+      margin: 0 auto;
+      width: 50%;
       @include transition(500ms, transform);
     }
   }
 }
 .skills_container {
   position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    height: 392px;
-    width: 123px;
-    top: 15%;
-    right: 0;
-    background: url("/images/circle-bg-img.png") no-repeat top left;
-  }
   &::before {
     @include animationShape(
-      60px,
-      60px,
-      10%,
+      40px,
+      40px,
+      0,
       "",
       "",
       100px,
-      "/images/half-circle.png"
+      "/images/green-star.png"
     );
   }
   .heading_text {
     &::before {
       @include animationShape(
-        36px,
-        36px,
+        40px,
+        40px,
         "",
-        10%,
-        10%,
+        -100px,
+        100px,
         "",
-        "/images/triangle-icon.png"
+        "/images/blue-star.png"
       );
     }
   }
   .skill_card {
     background-color: white;
     padding: 2.06em 1.75em 2.18em;
-    box-shadow: 0 0 5.31em 0 #e9eefc;
     border-radius: 1.25em;
-    transition: 500ms transform ease-out;
+    box-shadow: 0px 35px 65px rgb(0 0 0 / 10%);
     z-index: 99;
     &:hover {
-      box-shadow: 0 0 85px 0 #e9eefc;
+      box-shadow: 0px 35px 65px rgb(0 0 0 / 10%);
       transform: scale(1.05);
     }
   }
@@ -380,6 +356,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
     overflow: hidden;
     z-index: 1;
+    box-shadow: 0px 35px 65px rgb(0 0 0 / 10%);
     .portfolio_card_overlay {
       visibility: hidden;
       opacity: 0;
@@ -471,18 +448,20 @@ body::-webkit-scrollbar-thumb {
       .contact_icon {
         width: 60px;
         height: 60px;
-        background-color: $secondaryColor;
+        background-color: $primaryLightBgColor;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        img {
+        i {
+          color: rgb(65, 65, 65);
+          font-size: 2em;
           transition: 500ms all ease-out;
         }
       }
       &:hover {
         .contact_icon {
-          img {
+          i {
             transform: translateY(-7px);
           }
         }
@@ -493,13 +472,13 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     &::before {
       @include animationShape(
-        36px,
-        36px,
-        50%,
-        "",
-        "",
+        40px,
+        40px,
         0,
-        "/images/curn-icon.png"
+        "",
+        -50px,
+        50px,
+        "/images/blue-start.png"
       );
     }
     .input_field,
@@ -518,6 +497,10 @@ body::-webkit-scrollbar-thumb {
 }
 .footer_container {
   position: relative;
+  .my_logo {
+    color: $primaryColor;
+    font-weight: 600;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -539,11 +522,6 @@ body::-webkit-scrollbar-thumb {
     opacity: 0.1;
   }
 }
-.sticky {
-  z-index: 999;
-  background-color: white;
-  box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
-}
 .technology_box {
   display: inline-block;
   padding: 0.1em 1em;
@@ -556,4 +534,40 @@ body::-webkit-scrollbar-thumb {
   background-color: $primaryColor;
   color: white;
   font-size: 0.7em !important;
+}
+.styles_scroll-to-top__2A70v {
+  background-color: $primaryColor !important;
+  padding: 1em !important;
+  height: 50px !important;
+  width: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
+  svg {
+    width: 100% !important;
+    height: 100% !important;
+    color: white !important;
+    transition: 500ms transform ease-out;
+    -webkit-transition: 500ms transform ease-out;
+    -moz-transition: 500ms transform ease-out;
+    -ms-transition: 500ms transform ease-out;
+    -o-transition: 500ms transform ease-out;
+  }
+  &:hover {
+    svg {
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-5px);
+      -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -o-transform: translateY(-5px);
+    }
+  }
 }

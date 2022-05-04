@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer_container pt-16">
         <div className="md:container mx-auto">
           <div className="text-center">
-            <h5 className="my_logo text-white text-xl">
+            <h5 className="my_logo text-xl">
               <Link href="/">
                 <a>
                   <span>Dev</span>
@@ -17,7 +17,7 @@ const Footer = () => {
             </h5>
             <div>
               <ul className="flex flex-wrap justify-center items-center py-9 text-gray-300">
-                <li className="px-5 md:border-r-2 md:border-gray-300">
+                <li className="px-5 md:border-r-2 md:border-gray-700">
                   <a className="common_underline_navLink" href="/">
                     Home
                   </a>
@@ -27,7 +27,7 @@ const Footer = () => {
                     About
                   </a>
                 </li>
-                <li className="px-5 md:border-x-2 md:border-gray-300">
+                <li className="px-5 md:border-x-2 md:border-gray-700">
                   <a className="common_underline_navLink" href="/">
                     Services
                   </a>
@@ -37,7 +37,7 @@ const Footer = () => {
                     Portfolio
                   </a>
                 </li>
-                <li className="px-5 md:border-l-2 md:border-gray-300">
+                <li className="px-5 md:border-l-2 md:border-gray-700">
                   <a
                     className="common_underline_navLink"
                     href="/#contact_section"
@@ -60,8 +60,8 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <hr />
-            <p className="text-sm text-gray-300 py-3">
+            <hr style={{ borderTop: "1px solid #9ca3af" }} />
+            <p className="text-sm text-gray-700 py-3">
               &copy; Copyright {new Date().getFullYear()} DevTertha | All Rights
               Reserved.
             </p>

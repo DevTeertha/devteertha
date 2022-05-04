@@ -74,11 +74,13 @@ const Navbar = () => {
                     }
                     className={`mx-4 ${navbarActive.about && "nav_active"}`}
                   >
-                    <Link href="/">About</Link>
+                    <Link href="/#contact_section">Contact</Link>
                   </li>
                   <li className="ml-10">
-                    <Link href="#contact_section">
-                      <a className="common_btn">Contact</a>
+                    <Link href="https://drive.google.com/file/d/1U8sRiGqP4N_KXz9FjcWu6dBRqMzdHoM9/view?usp=sharing">
+                      <a target={"_blank"} className="common_btn">
+                        Resume
+                      </a>
                     </Link>
                   </li>
                 </ul>
@@ -137,13 +139,15 @@ const Navbar = () => {
               }
               className={`${navbarActive.about && "nav_active"}`}
             >
-              <Link href="/">
-                <a className="text_dark">About</a>
+              <Link href="/#contact_section">
+                <a className="text_dark">Contact</a>
               </Link>
             </li>
             <li className="mt-3">
-              <Link href="#contact_section">
-                <a className="common_btn">Contact</a>
+              <Link href="https://drive.google.com/file/d/1U8sRiGqP4N_KXz9FjcWu6dBRqMzdHoM9/view?usp=sharing">
+                <a target={"_blank"} className="common_btn">
+                  Resume
+                </a>
               </Link>
             </li>
           </ul>
