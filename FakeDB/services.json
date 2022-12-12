@@ -9,12 +9,12 @@
     },
     {
       "title": "Front End Development",
-      "description": "Creating Front End using HTML/CSS, SASS, CSS Framework, Vanila JS, TypeScript, React JS/Next JS, Redux and Consuming api.",
+      "description": "Creating Front End using HTML/CSS, SASS, CSS Framework, Vanila JS, TypeScript, React JS/Next JS, Redux, Angular and Consuming api.",
       "icon": "/images/frontend.png"
     },
     {
       "title": "Back End Development",
-      "description": "Create Back End server using Node JS, Express JS, Rest API. Also I'm able to connectivity with database such as MongoDB/MySQL.",
+      "description": "Create Back End server using Node JS, Express JS, NEST JS, Rest API, GraphQL, MySQL, MongoDB, TypeORM. Also I'm able to connectivity with database such as MongoDB/MySQL.",
       "icon": "/images/backend.png"
     }
   ]

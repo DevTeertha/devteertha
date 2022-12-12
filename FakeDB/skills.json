@@ -50,6 +50,11 @@
       "percentage": 90
     },
     {
+      "icon": "/images/logo/angular.png",
+      "name": "Angular",
+      "percentage": 90
+    },
+    {
       "icon": "/images/logo/nodejs.png",
       "name": "Node JS",
       "percentage": 90
@@ -57,6 +62,11 @@
     {
       "icon": "/images/logo/expressjs.png",
       "name": "Express JS",
+      "percentage": 90
+    },
+    {
+      "icon": "/images/logo/nest.png",
+      "name": "Nest JS",
       "percentage": 90
     },
     {

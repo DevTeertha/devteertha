@@ -1,4 +1,3 @@
-import React from "react";
 import { Carousel } from "react-responsive-carousel";
 const ProjectDetail = ({ projectDetails }: any) => {
   return (
@@ -31,18 +30,22 @@ const ProjectDetail = ({ projectDetails }: any) => {
             </h1>
             <p className="text-gray-600 my-3">{projectDetails?.description}</p>
             <div className="py-5">
-              <a
-                className="common_underline_btn_sm"
-                href={projectDetails?.links?.project?.client}
-              >
-                Client
-              </a>
-              <a
-                className="common_underline_btn_sm mx-5"
-                href={projectDetails?.links?.project?.server}
-              >
-                Server
-              </a>
+              {projectDetails?.links?.project?.client && (
+                <a
+                  className="common_underline_btn_sm"
+                  href={projectDetails.links.project.client}
+                >
+                  Client
+                </a>
+              )}
+              {projectDetails?.links?.project?.server && (
+                <a
+                  className="common_underline_btn_sm mx-5"
+                  href={projectDetails.links.project.server}
+                >
+                  Server
+                </a>
+              )}
             </div>
             <div className="py-5">
               <h3 className="text-3xl font-semibold">Features:</h3>

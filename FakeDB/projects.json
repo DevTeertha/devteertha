@@ -3,6 +3,39 @@
   "heading": "Projects",
   "portfolios": [
     {
+      "name": "Alleschem",
+      "description": "Alleschem is a multi-vendor chemical e-commerce indian platform. It's Associate with TechScooper(Indian Software Company). I contributed as a Front End Developer and UI/UX Designer.",
+      "images": ["/images/portfolios/alleschem.png"],
+      "features": [
+        {
+          "name": "Registration As a Buyer And Seller."
+        },
+        {
+          "name": "Payment Gatway Integration"
+        },
+        {
+          "name": "Elite Membership"
+        },
+        {
+          "name": "Add Chemical and Place Order"
+        },
+        {
+          "name": "Request for chemical."
+        }
+      ],
+      "technology": {
+        "frontend": ["Next JS", "Bootstrap"],
+        "backend": ["PHP", "MySQL", "REST API"]
+      },
+      "links": {
+        "live": "https://www.alleschem.com/",
+        "project": {
+          "client": null,
+          "server": null
+        }
+      }
+    },
+    {
       "name": "RedLight Wedding",
       "description": "RedLight Wedding is an event planning website. Users can book any event or plan for their wedding. I had completed this project in only 4 days.",
       "images": [
