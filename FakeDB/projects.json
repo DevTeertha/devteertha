@@ -1,142 +1,240 @@
 {
-  "category": "Creative Works",
-  "heading": "Projects",
-  "portfolios": [
-    {
-      "name": "Alleschem",
-      "description": "Alleschem is a multi-vendor chemical e-commerce indian platform. It's Associate with TechScooper(Indian Software Company). I contributed as a Front End Developer and UI/UX Designer.",
-      "images": ["/images/portfolios/alleschem.png"],
-      "features": [
+    "category": "Creative Works",
+    "heading": "Projects",
+    "portfolios": [
         {
-          "name": "Registration As a Buyer And Seller."
+            "name": "Hazira",
+            "description": "Hazira is a comprehensive Human Resource Management System (HRMS) designed to streamline and elevate workforce management for businesses of all sizes. Offered as a SaaS (Software as a Service) product, Hazira delivers powerful tools for HR operations, including employee onboarding, payroll management, performance tracking, attendance monitoring, and more—all through an intuitive and user-friendly interface. Backed by the innovative expertise of Mind Orbital Technologies, Hazira combines cutting-edge technology with best-in-class HR practices to empower organizations to optimize their talent management processes, improve operational efficiency, and foster a thriving workplace culture. Whether you're managing a startup or a large enterprise, Hazira is your trusted partner for efficient, scalable, and data-driven HR solutions",
+            "images": [
+                "/images/portfolios/hazira/hazira-thumbnail.png",
+                "/images/portfolios/hazira/screen1.png",
+                "/images/portfolios/hazira/screen2.png",
+                "/images/portfolios/hazira/screen3.png",
+                "/images/portfolios/hazira/screen4.png",
+                "/images/portfolios/hazira/screen5.png",
+                "/images/portfolios/hazira/screen6.png",
+                "/images/portfolios/hazira/screen7.png",
+                "/images/portfolios/hazira/screen8.png",
+                "/images/portfolios/hazira/screen9.png",
+                "/images/portfolios/hazira/screen10.png",
+                "/images/portfolios/hazira/screen11.png",
+                "/images/portfolios/hazira/screen12.png",
+                "/images/portfolios/hazira/screen13.png",
+                "/images/portfolios/hazira/screen14.png",
+                "/images/portfolios/hazira/screen15.png",
+                "/images/portfolios/hazira/screen16.png",
+                "/images/portfolios/hazira/screen17.png",
+                "/images/portfolios/hazira/screen18.png",
+                "/images/portfolios/hazira/screen19.png",
+                "/images/portfolios/hazira/screen20.png",
+                "/images/portfolios/hazira/screen21.png",
+                "/images/portfolios/hazira/screen22.png"
+            ],
+            "features": [
+                {
+                    "name": "Time clock management. Take break, Add note, change position, address tracking, proof with selfee"
+                },
+                {
+                    "name": "Shift planning management"
+                },
+                {
+                    "name": "Employee leave management"
+                },
+                {
+                    "name": "Payroll management"
+                },
+                {
+                    "name": "Role management"
+                },
+                {
+                    "name": "File management"
+                },
+                {
+                    "name": "Contract Signing"
+                },
+                {
+                    "name": "Report export"
+                },
+                {
+                    "name": "Auto clock out"
+                }
+            ],
+            "technology": {
+                "frontend": ["Angular", "Socket IO", "RX JS", "Ngrx store", "Ngx Bootstrap", "Full calendar", "dayjs"],
+                "backend": ["Nest js", "Socket IO", "Redis", "MySQL", "TypeORM", "DigiSign", "SSL Commerz"]
+            },
+            "links": {
+                "live": "https://www.hazira.com/",
+                "project": {
+                    "client": null,
+                    "server": null
+                }
+            }
         },
         {
-          "name": "Payment Gatway Integration"
+            "name": "Nexopet",
+            "description": "Nexopet is an innovative online veterinary service platform developed in partnership with Feather IT, revolutionizing pet care by seamlessly combining e-commerce and professional medical services. Nexopet allows pet owners to purchase medicines and pet food while also offering online consultations with qualified veterinarians. The platform supports a robust multi-role system, including Suppliers for managing inventory, Doctors for providing virtual consultations, Users (pet owners) for accessing products and services, and Super Admins for overseeing operations. As a Frontend Developer, I contributed to crafting a user-centric, responsive interface, ensuring a seamless experience for all roles while supporting the platform's mission to enhance pet care accessibility and convenience.",
+            "images": [
+                "/images/portfolios/nexopet/nexopet-thumbnail.png",
+                "/images/portfolios/nexopet/screen2.png",
+                "/images/portfolios/nexopet/screen3.png",
+                "/images/portfolios/nexopet/screen4.png",
+                "/images/portfolios/nexopet/screen5.png",
+                "/images/portfolios/nexopet/screen6.png",
+                "/images/portfolios/nexopet/screen7.png",
+                "/images/portfolios/nexopet/screen8.png",
+                "/images/portfolios/nexopet/screen9.png"
+            ],
+            "features": [
+                {
+                    "name": "Online Doctor and Appointment"
+                },
+                {
+                    "name": "E-Commerce solution"
+                },
+                {
+                    "name": "Supplier management"
+                }
+            ],
+            "technology": {
+                "frontend": ["ReactJS", "Bootstrap"],
+                "backend": ["Python", "MySQL", "REST API"]
+            },
+            "links": {
+                "live": "https://www.nexopet.com/",
+                "project": {
+                    "client": null,
+                    "server": null
+                }
+            }
         },
         {
-          "name": "Elite Membership"
+            "name": "Taskmate",
+            "description": "Taskmate is a task management solution where manage employee and employee's project, task, contribution management solution. It's associate with FeatherIT. I contribute as a Frontend Developer",
+            "images": [
+                "/images/portfolios/task-mate/taskmate-thumbnail.png",
+                "/images/portfolios/task-mate/screen1.png",
+                "/images/portfolios/task-mate/screen2.png",
+                "/images/portfolios/task-mate/screen3.png",
+                "/images/portfolios/task-mate/screen4.png",
+                "/images/portfolios/task-mate/screen5.png",
+                "/images/portfolios/task-mate/screen6.png",
+                "/images/portfolios/task-mate/screen7.png"
+            ],
+            "features": [
+                {
+                    "name": "Registration As a Buyer And Seller."
+                },
+                {
+                    "name": "Payment Gatway Integration"
+                },
+                {
+                    "name": "Elite Membership"
+                },
+                {
+                    "name": "Add Chemical and Place Order"
+                },
+                {
+                    "name": "Request for chemical."
+                }
+            ],
+            "technology": {
+                "frontend": ["Next JS", "Bootstrap"],
+                "backend": ["PHP", "MySQL", "REST API"]
+            },
+            "links": {
+                "live": "https://jio.com.bd/login",
+                "project": {
+                    "client": null,
+                    "server": null
+                }
+            }
         },
         {
-          "name": "Add Chemical and Place Order"
+            "name": "Alleschem",
+            "description": "Alleschem is a multi-vendor chemical e-commerce indian platform. It's Associate with TechScooper(Indian Software Company). I contributed as a Front End Developer and UI/UX Designer.",
+            "images": ["/images/portfolios/alleschem.png"],
+            "features": [
+                {
+                    "name": "Registration As a Buyer And Seller."
+                },
+                {
+                    "name": "Payment Gatway Integration"
+                },
+                {
+                    "name": "Elite Membership"
+                },
+                {
+                    "name": "Add Chemical and Place Order"
+                },
+                {
+                    "name": "Request for chemical."
+                }
+            ],
+            "technology": {
+                "frontend": ["Next JS", "Bootstrap"],
+                "backend": ["PHP", "MySQL", "REST API"]
+            },
+            "links": {
+                "live": "https://www.alleschem.com/",
+                "project": {
+                    "client": null,
+                    "server": null
+                }
+            }
         },
         {
-          "name": "Request for chemical."
+            "name": "QuranRT",
+            "description": "Our Quran website is a comprehensive platform designed to enhance your Quranic learning and spiritual experience. It's associate with FeatherIT. I contribute as a Frontend Developer.",
+            "images": [
+                "/images/portfolios/quranrt/quranrt-thumbnail.png",
+                "/images/portfolios/quranrt/screen0.png",
+                "/images/portfolios/quranrt/screen1.png",
+                "/images/portfolios/quranrt/screen2.png",
+                "/images/portfolios/quranrt/screen3.png",
+                "/images/portfolios/quranrt/screen4.png",
+                "/images/portfolios/quranrt/screen5.png",
+                "/images/portfolios/quranrt/screen6.png",
+                "/images/portfolios/quranrt/screen7.png",
+                "/images/portfolios/quranrt/screen8.png"
+            ],
+            "features": [
+                {
+                    "name": "Authentication System (Login, Register, Profile, Forgot Password)"
+                },
+                {
+                    "name": "Bookmark management"
+                },
+                {
+                    "name": "Highlight management"
+                },
+                {
+                    "name": "Add note on specific ayat"
+                },
+                {
+                    "name": "Books download"
+                },
+                {
+                    "name": "Reading mode"
+                },
+                {
+                    "name": "Text copy verse range"
+                },
+                {
+                    "name": "Dark mode"
+                }
+            ],
+            "technology": {
+                "frontend": ["React JS", "Tailwind CSS", "Flowbite"],
+                "backend": ["Django", "MySQL", "REST API"]
+            },
+            "links": {
+                "live": "https://quranrt.org/",
+                "project": {
+                    "client": null,
+                    "server": null
+                }
+            }
         }
-      ],
-      "technology": {
-        "frontend": ["Next JS", "Bootstrap"],
-        "backend": ["PHP", "MySQL", "REST API"]
-      },
-      "links": {
-        "live": "https://www.alleschem.com/",
-        "project": {
-          "client": null,
-          "server": null
-        }
-      }
-    },
-    {
-      "name": "RedLight Wedding",
-      "description": "RedLight Wedding is an event planning website. Users can book any event or plan for their wedding. I had completed this project in only 4 days.",
-      "images": [
-        "/images/portfolios/redlight-wedding1.png",
-        "/images/portfolios/redlight-wedding2.png",
-        "/images/portfolios/redlight-wedding3.png"
-      ],
-      "features": [
-        {
-          "name": "Login Authentication with Google"
-        },
-        {
-          "name": "Payment Gatway Integration"
-        },
-        {
-          "name": "Protected Route"
-        },
-        {
-          "name": "Admin can make another admin, Add Services, Delete Services"
-        },
-        {
-          "name": "User can give review, order service"
-        }
-      ],
-      "technology": {
-        "frontend": ["Bootstrap", "React JS"],
-        "backend": ["Node JS", "Express JS", "MongoDB", "REST API"]
-      },
-      "links": {
-        "live": "https://redlight-wedding.web.app/",
-        "project": {
-          "client": "https://github.com/DevTeertha/RedLight-Wedding-Client",
-          "server": "https://github.com/DevTeertha/RedLight-Wedding-Server"
-        }
-      }
-    },
-    {
-      "name": "Bazar Deal",
-      "description": "Bazar Deal is a simple e-commerce website. I just made this only 3-4 days. Actually, I made this as an assignment for my web development course.",
-      "images": [
-        "/images/portfolios/bazar-deal1.png",
-        "/images/portfolios/bazar-deal2.png",
-        "/images/portfolios/bazar-deal3.png"
-      ],
-      "features": [
-        {
-          "name": "Login Authentication with Google"
-        },
-        {
-          "name": "Protected Route"
-        },
-        {
-          "name": "Admin can add new product, delete product"
-        },
-        {
-          "name": "User can order product and see their order list"
-        }
-      ],
-      "technology": {
-        "frontend": ["Bootstrap", "React JS"],
-        "backend": ["Node JS", "Express JS", "MongoDB", "REST API"]
-      },
-      "links": {
-        "live": "https://bazar-deal.web.app/",
-        "project": {
-          "client": "https://github.com/DevTeertha/Bazar-Deal-Client",
-          "server": "https://github.com/DevTeertha/Bazar-Deal-Server"
-        }
-      }
-    },
-    {
-      "name": "City Rider",
-      "description": "City Rider is a very simple application.",
-      "images": [
-        "/images/portfolios/city_rider1.png",
-        "/images/portfolios/city_rider2.png"
-      ],
-      "features": [
-        {
-          "name": "Login Authentication with Google"
-        },
-        {
-          "name": "Protected Route"
-        },
-        {
-          "name": "Admin can add new product, delete product"
-        },
-        {
-          "name": "User can order product and see their order list"
-        }
-      ],
-      "technology": {
-        "frontend": ["Bootstrap", "React JS"],
-        "backend": []
-      },
-      "links": {
-        "live": "https://bazar-deal.web.app/",
-        "project": {
-          "client": "https://github.com/DevTeertha/Bazar-Deal-Client"
-        }
-      }
-    }
-  ]
+    ]
 }
