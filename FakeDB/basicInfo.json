@@ -1,51 +1,51 @@
 {
-  "intro": "Hello, I Am",
-  "title": ["Tertha Dev Sarker", "Full Stack Developer", "Software Engineer"],
-  "description": "I'm a professional Full Stack Developer. I'm very passionate and learning new technology is my passion. Also I'm a quick learner. Technology doesn't matter to me.",
-  "image": "/images/myImage.png",
-  "logo": "",
-  "socialMedias": [
-    {
-      "name": "Linkedin",
-      "icon": "fa-brands fa-linkedin-in",
-      "url": "https://www.linkedin.com/in/devteertha/"
+    "intro": "Hello, I Am",
+    "title": ["Tertha Dev Sarker", "Full Stack Developer", "Software Engineer"],
+    "description": "I'm a professional Full Stack Developer. I'm very passionate and learning new technology is my passion. Also I'm a quick learner. Technology doesn't matter to me.",
+    "image": "/images/myImage2.png",
+    "logo": "",
+    "socialMedias": [
+        {
+            "name": "Linkedin",
+            "icon": "fa-brands fa-linkedin-in",
+            "url": "https://www.linkedin.com/in/devteertha/"
+        },
+        {
+            "name": "Github",
+            "icon": "fa-brands fa-github",
+            "url": "https://github.com/DevTeertha"
+        },
+        {
+            "name": "Facebook",
+            "icon": "fa-brands fa-facebook-f",
+            "url": "https://www.facebook.com/devteertha/"
+        }
+    ],
+    "professionalInfo": [],
+    "about": "Myself Tertha Dev Sarker. I'm a professional web developer and I always like to learn new technology because it's very exciting for me. I've completed many projects but I can't face any challenge to complete projects because I think 'If your aim is strong, You can do it easily'. I always take it easy to complete any kind of task. And I always like to that task which is very challenging for others one.",
+    "contactInfo": {
+        "phone": ["+8801672066834", "+8801572401416"],
+        "email": "devteertha28@gmail.com",
+        "address": {
+            "street": "179 no college road",
+            "city": "Narayanganj",
+            "country": "Bangladesh"
+        }
     },
-    {
-      "name": "Github",
-      "icon": "fa-brands fa-github",
-      "url": "https://github.com/DevTeertha"
-    },
-    {
-      "name": "Facebook",
-      "icon": "fa-brands fa-facebook-f",
-      "url": "https://www.facebook.com/devteertha/"
-    }
-  ],
-  "professionalInfo": [],
-  "about": "Myself Tertha Dev Sarker. I'm a professional web developer and I always like to learn new technology because it's very exciting for me. I've completed many projects but I can't face any challenge to complete projects because I think 'If your aim is strong, You can do it easily'. I always take it easy to complete any kind of task. And I always like to that task which is very challenging for others one.",
-  "contactInfo": {
-    "phone": ["+8801672066834", "+8801572401416"],
-    "email": "devteertha28@gmail.com",
-    "address": {
-      "street": "179 no college road",
-      "city": "Narayanganj",
-      "country": "Bangladesh"
-    }
-  },
-  "educationalInfo": [
-    {
-      "instituteName": "University Of Scholars",
-      "degree": "B.Sc",
-      "subject": "Computer Science & Engineering",
-      "startYear": "May 2019",
-      "passingYear": "Oct 2023"
-    },
-    {
-      "instituteName": "Govt Tolaram College",
-      "degree": "HSC",
-      "subject": "Science",
-      "startYear": "2015",
-      "passingYear": "2017"
-    }
-  ]
+    "educationalInfo": [
+        {
+            "instituteName": "University Of Scholars",
+            "degree": "B.Sc",
+            "subject": "Computer Science & Engineering",
+            "startYear": "May 2019",
+            "passingYear": "Oct 2023"
+        },
+        {
+            "instituteName": "Govt Tolaram College",
+            "degree": "HSC",
+            "subject": "Science",
+            "startYear": "2015",
+            "passingYear": "2017"
+        }
+    ]
 }
