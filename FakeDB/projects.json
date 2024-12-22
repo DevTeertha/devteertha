@@ -123,24 +123,21 @@
             ],
             "features": [
                 {
-                    "name": "Registration As a Buyer And Seller."
+                    "name": "Project Management"
                 },
                 {
-                    "name": "Payment Gatway Integration"
+                    "name": "Task Management"
                 },
                 {
-                    "name": "Elite Membership"
+                    "name": "Employee activity tracking on specific project"
                 },
                 {
-                    "name": "Add Chemical and Place Order"
-                },
-                {
-                    "name": "Request for chemical."
+                    "name": "Task commenting system"
                 }
             ],
             "technology": {
-                "frontend": ["Next JS", "Bootstrap"],
-                "backend": ["PHP", "MySQL", "REST API"]
+                "frontend": ["React JS", "Bootstrap"],
+                "backend": ["Django", "MySQL", "REST API"]
             },
             "links": {
                 "live": "https://jio.com.bd/login",
